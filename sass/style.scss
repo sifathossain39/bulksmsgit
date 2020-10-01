@@ -1,0 +1,217 @@
+@font-face {
+    src: url(../fonts/Oswald-Regular.ttf);
+    font-family: oswald;
+}
+
+// GLOBAL START ===========================
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #c5cae9;
+    overflow: hidden;
+}
+
+input:focus,
+select:focus,
+button:focus,
+a:focus,
+textarea:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+// hide spin button in INPUT BOX [number] 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+// INPUT BOX DEFAULT FULL WIDTH
+form,
+input {
+    width: 100%;
+
+    .form-control,
+    .form-control:focus {
+        background-color: transparent;
+        border: 1px solid #000000;
+    }
+}
+
+// DEFAULT FONT SIZE IN LABEL
+
+form {
+    label {
+        font-size: 16px;
+    }
+}
+
+// FIXED TEXT AREA SIZE
+
+textarea {
+    resize: none;
+}
+
+// GLOBAL END ===========================
+
+
+
+// NAVBAR
+@import "navbar";
+
+
+// SIDEBAR
+@import "sidebar";
+
+
+
+// INNER CONTENT
+.main_container {
+
+    .content-page {
+        margin-top: 60px;
+        padding: 30px;
+        transition: all 0.3s ease;
+
+        // square content with shadow effect box
+
+        .content-box {
+            border-radius: 20px;
+            background: #c5cae9;
+            box-shadow: inset 5px 5px 10px #a7acc6, inset -5px -5px 10px #e3e8ff;
+
+            // DASHBOARD CONTENT
+            .box {
+                width: 150px;
+                height: 125px;
+                border-radius: 30px;
+                background: linear-gradient(145deg, #d3d8f9, #b1b6d2);
+                box-shadow: 5px 5px 10px #a7acc6, -5px -5px 10px #e3e8ff;
+
+
+                a {
+                    text-decoration: none;
+                    color: #05305a;
+                    font-size: 16px;
+
+                    span {
+                        font-size: 40px;
+                        width: 40px;
+                    }
+
+                    &:hover {
+                        color: #ff5252;
+                    }
+                }
+            }
+
+            // SEND SMS, BULK SMS CONTENT
+
+            #sendSms,
+            #bulkSms,
+            #groupSms {
+
+                // CUSTOMIZE INPUT/TEXT BOX START =================
+                input,
+                textarea {
+                    border: none;
+                    outline: none;
+                    border-radius: 15px;
+                    background: #c5cae9;
+                    color: #000000;
+                    box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff;
+                }
+
+                input {
+                    padding-left: 10px;
+                }
+
+                input:focus,
+                textarea:focus {
+                    box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff !important;
+                }
+
+                // CUSTOMIZE INPUT/TEXT BOX END ===================
+
+                // INPUT [type file] 
+                .file-field {
+                    .btn {
+                        line-height: 2rem;
+                    }
+                }
+
+                // INPUT [type file] BOX
+                .select-wrapper+label {
+                    margin-top: -15px;
+                }
+
+                // CHANGE FONT AND COLOR
+                p,
+                span,
+                label {
+                    font-size: 14px;
+                    color: #303030;
+                }
+
+                label {
+                    font-weight: bold;
+                }
+
+                // GROUP SMS RADIO BUTTON
+                .check {
+                    p {
+                        margin-top: 10px !important;
+                    }
+
+                    span::before {
+                        box-shadow: 5px 5px 10px #8e91a8, -5px -5px 10px #fcffff;
+                    }
+                }
+
+                // Material modal overlapping fixed [PREVIEW MODAL]
+                .modal {
+                    right: initial;
+                    background-color: transparent;
+                    padding: initial;
+                    max-height: initial;
+                    margin: initial;
+                    border-radius: initial;
+                    will-change: initial;
+
+                    .modal-content {
+                        padding: initial;
+
+                        .close span {
+                            font-size: 1.5rem;
+                        }
+
+                        .modal-footer {
+                            .btn {
+                                margin: .25rem;
+                                text-transform: initial;
+                            }
+                        }
+                    }
+                }
+
+                // Material modal overlapping fixed [PREVIEW MODAL] END =====================
+
+
+            }
+        }
+    }
+
+}
+
+// MEDIA QUERY
+@import "media-query";

@@ -1,0 +1,155 @@
+// Media Query
+
+// 0px to 575px 
+@media screen and (max-width: 575px) and (min-width: 0px) {
+
+    // SMALL SECEEN SHOW ATMOTECH NAME
+    .navbar {
+
+        .logo {
+            width: 180px;
+
+            .logo-title {
+                font-size: 30px;
+                letter-spacing: 5px;
+            }
+        }
+    }
+
+    // CONTENT BOX REDESIGN
+    .main_container {
+        .content-page {
+            padding: 0px;
+
+            // SHADOW EFFECT NONE
+            .content-box {
+                border-radius: 0px;
+                box-shadow: none;
+
+                // DASHBOARD CONTENT
+                .box {
+                    width: 100%;
+                    border-radius: 0px;
+                    box-shadow: none;
+                    
+
+                    a {
+                        color: #ff5252;
+
+                        span {
+                            margin-top: 30px !important;
+                        }
+
+                        &:hover,
+                        &:active {
+                            color: #ffffff;
+                        }
+                    }
+
+                    &:hover,
+                    &:active {
+                        background: #ff5252;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+// 0px to 767px
+@media screen and (max-width: 767px) and (min-width: 0px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main_container {
+        .content-page {
+            width: 100%;
+        }
+    }
+}
+
+
+// 768px to max
+@media only screen and (min-width:768px) {
+    
+    // ATMOTECH BG COLOR
+    .navbar {
+        .logo {
+            background: #204267;
+        }
+    }
+
+    // CONTENT PAGE WIDTH WITH SIDEBAR
+    .main_container {
+        .content-page {
+            width: calc(100% - 225px);
+            margin-left: 225px;
+        }
+    }
+
+    // AFTER CLICK HAMBARGUR
+    .navbar.active {
+
+        // ATMOECHT DISAPPEAR SHOW ONLY ICON
+        .logo {
+            width: 50px;
+
+            .nav-icon {
+                display: block !important;
+                width: 28px;
+                margin: auto;
+                margin-top: 10px;
+            }
+
+            .logo-title {
+                display: none;
+            }
+        }
+    }
+
+    // WHEN SIDEBR COLLAPSE
+    .main_container.active {
+        
+        // SHOW ONLY SIDEBAR ICON
+        .sidebar {
+            width: 50px;
+
+            ul li a span.title,
+            .header-title {
+                display: none;
+            }
+
+            .header-icon {
+                display: block;
+                font-size: 20px;
+                padding-left: 15px;
+                color: #ffffff;
+                user-select: none;
+            }
+
+            ul li:hover {
+                a {
+                    border-top: 1px solid transparent;
+                    border-bottom: 1px solid transparent;
+                }
+
+                a span.title {
+                    display: inline;
+                }
+
+                width: 225px;
+            }
+
+        }
+
+        // CONTENT PAGE WIDTH CHANGE
+        .content-page {
+            width: calc(100% - 50px);
+            margin-left: 50px;
+        }
+    }
+
+}

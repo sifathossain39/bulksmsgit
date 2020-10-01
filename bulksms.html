@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk SMS | Atmotech</title>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/material-icon.css">
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- TOP NAVBAR -->
+    <div class="navbar navbar-dark navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <div class="logo text-center">
+                <span><img class="img-fluid d-none nav-icon" src="./images/logo-alt.png" alt=""></span>
+                <a class="navbar-brand logo-title m-0" href="index.html">ATMOTECH</a>
+            </div>
+
+            <!-- FOR 0 TO 767PX -->
+            <div class="hamburger navbar-toggler border-0" data-toggle="collapse" data-target="#navbarNav">
+                <div class="hamburger_inner">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+            </div>
+
+            <!-- FOR 768 TO MAX -->
+            <div class="hamburger sidetoggle d-none d-md-block">
+                <div class="hamburger_inner">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+            </div>
+
+            <!-- MAIN NAVBAR RIGHT SIDE AND SMALL SCREEN NAVBAR -->
+            <div id="navbarNav" class="collapse navbar-collapse mynav">
+
+                <!-- USER INFO -->
+                <ul class="navbar-nav ml-auto d-none d-md-block">
+                    <div class="dropdown mr-5">
+                        <a class="btn waves-effect dropdown-toggle" href="#" data-toggle="dropdown">Sifat Hossain</a>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Balance: 10.00 BDT</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Update Profile</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-key mr-2"></i>Change Password</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt mr-2"></i>Logout</a>
+                        </div>
+                    </div>
+                </ul>
+
+                <!-- SMALL SCREEN NAVBAR -->
+                <ul class="navbar-nav d-md-none text-center navbar-sm">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sendsms.html">Send SMS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bulksms.html">Bulk SMS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="groupsms.html">Group SMS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">SMS Log</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Manage Group</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Update Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">User Manual</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- TOP NAVBAR END -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main_container">
+
+        <!-- SIDEBAR START  -->
+        <div class="sidebar">
+            <div class="sidebar_inner">
+                <i class="header-icon mb-3 mt-4 fas fa-paper-plane"></i>
+                <div class="header-title my-3">Bulk SMS Service</div>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span class="icon"><i class="fas fa-envelope"></i></span>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sendsms.html">
+                            <span class="icon"><i class="fas fa-envelope"></i></span>
+                            <span class="title">Send SMS</span>
+                        </a>
+                    </li>
+                    <li class="active-bar">
+                        <a href="bulksms.html">
+                            <span class="icon"><i class="fas fa-envelope"></i></span>
+                            <span class="title">Bulk SMS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="groupsms.html">
+                            <span class="icon"><i class="fas fa-book-open"> </i></span>
+                            <span class="title">Group SMS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-users"> </i></span>
+                            <span class="title">SMS Log</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-money-check"> </i></span>
+                            <span class="title">Manage Group</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-user"> </i></span>
+                            <span class="title">Update Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="fas fa-book"> </i></span>
+                            <span class="title">User Manual</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- SIDEBAR END -->
+
+        <div class="container-fluid content-page">
+
+            <!-- BULK SMS CONTENT START content-box-shadow -->
+            <div class="content-box p-0 p-sm-4">
+                <div class="row">
+                    <form id="bulkSms">
+
+                        <!-- UPLOAD EXCEL FILE -->
+                        <div class="form-row justify-content-center my-3 mx-5 mx-xl-0">
+                            <div class="col-12 col-xl-8">
+                                <div class="file-field input-field">
+                                    <div class="btn waves-effect light-blue col-12 col-sm-5 col-lg-4 mb-3 mb-sm-0">
+                                        <span class="select-file">Select Excel File</span>
+                                        <input type="file">
+                                    </div>
+                                    <div class="file-path-wrapper col-12 col-sm-7 col-lg-8 pl-0 pl-sm-5">
+                                        <input class="file-path validate text-muted" type="text" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SELECT SHEET NAME AND MOBILE COLUMN -->
+                        <div class="form-row justify-content-center mb-3 mx-5 mx-xl-0">
+                            <div class="col-12 col-md-6 col-xl-4 mb-3 mb-md-0 pr-4">
+                                <div class="input-field">
+                                    <select>
+                                        <option value="" disabled selected>Choose Sheet Name</option>
+                                        <option value="1">Option 1</option>
+                                    </select>
+                                    <label>Sheet Name</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4 pr-4">
+                                <div class="input-field">
+                                    <select>
+                                        <option value="" disabled selected>Choose Column</option>
+                                        <option value="1">Option 1</option>
+                                    </select>
+                                    <label>Mobile Number Column</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TYPE MESSAGE -->
+                        <div class="form-row justify-content-center mx-5 mx-xl-0">
+                            <div class="col-12 col-md-12 col-lg-7 col-xl-4">
+                                <label for="smsArea">Enter Message</label>
+                                <textarea class="form-control" id="smsArea" rows="5"
+                                    placeholder="Type Your Message Here"></textarea>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-5 col-xl-4 my-auto">
+                                <p class="m-0 p-0 mt-3 ml-3">Encoding: <span>GSM_7BIT_EX</span></p>
+                                <p class="m-0 p-0 ml-3">You have <span id="wordCount">0 words</span> and <span
+                                        id="charCount">0
+                                        characters</span></p>
+                                <p class="m-0 p-0 ml-3"><span>Number of SMS: </span><span>0</span></p>
+                                <p class="ml-3"><span>Remaining Character:</span>&nbsp;<span id="remainingC">160</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- SUBMIT/PREVIEW/RESET BUTTONS -->
+                        <div class="form-row justify-content-center mt-5">
+                            <a href="#modalPreview2" class="btn waves-effect orange lighten-2 mr-3"
+                                data-toggle="modal">Preview</a>
+                            <a href="#" class="btn waves-effect teal lighten-2 mr-3">Send</a>
+                            <a href="bulksms.html" class="btn waves-effect pink lighten-2">Reset</a>
+                        </div>
+
+                        <!-- Modal Structure [PREVIEW] -->
+                        <div class="modal fade" id="modalPreview2">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">SMS Preview</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <!-- PREVIEW TABLE -->
+                                        <table class="table table-bordered table-condensed table-hover table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Number</th>
+                                                    <th scope="col">SMS</th>
+                                                    <th scope="col">Length</th>
+                                                    <th scope="col">Char</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>01718624208</td>
+                                                    <td>This is a test Message sent from md z</td>
+                                                    <td>1</td>
+                                                    <td>123</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn waves-effect grey darken-2 text-light"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- SEND SMS CONTENT END -->
+        </div>
+    </div>
+
+
+
+    <!-- JS FILES -->
+    <script src="./js/jquery.slim.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

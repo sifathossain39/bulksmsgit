@@ -1,0 +1,97 @@
+// CUSTOMIZE NAVBAR DIV
+.navbar {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #05305a;
+    height: 50px;
+    z-index: 99999;
+
+    .container-fluid {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    // ATMOTECH LOGO START ==========
+    .logo {
+        width: 225px;
+        height: 50px;
+        transition: all 0.3s ease;
+
+        .logo-title{
+            font-family: oswald, sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            letter-spacing: 5px;
+            user-select: none;
+        }
+    }
+    // ATMOTECH LOGO END ============
+
+    // COLLABSABLE BUTTON 3 DIV START ==========
+    .hamburger {
+        width: 80px;
+        position: relative;
+
+        .hamburger_inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            width: 40px;
+            height: 10px;
+
+            div {
+                width: 20px;
+                height: 3px;
+                background: #ff5252;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                &.two {
+                    top: 5px;
+                    width: 25px;
+                }
+
+                &.three {
+                    top: 10px;
+                }
+            }
+        }
+    }
+    // COLLABSABLE BUTTON 3 DIV END ==========
+
+    // STYLE RIGHT SIDE BUTTON 
+    #navbarNav{
+        .btn{
+            background-color:#ff5252;
+        }
+    }
+
+    // SMALL SCREEN NAVBAR START ===============
+    .mynav{
+        .navbar-sm{
+            background: #042331;
+            border-top: 1px solid #042331;
+            li:hover,li:active {
+                
+                background: #16222A;
+                background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+                background: linear-gradient(to right, #3A6073, #16222A);
+            }
+            a{
+                color: #ffffff;
+            }
+
+            .nav-item {
+                padding-left: 1rem;
+        
+                .nav-link {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    // SMALL SCREEN NAVBAR END ===============
+}

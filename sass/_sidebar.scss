@@ -1,0 +1,75 @@
+.main_container {
+
+    // START SIDEBAR STYLING
+    .sidebar {
+        position: fixed;
+        top: 40PX;
+        left: 0;
+        width: 225px;
+        height: 100%;
+        background: #05305a;
+        transition: all 0.3s ease;
+        z-index: 9999;
+
+        .sidebar_inner {
+            position: relative;
+
+            // BULK SMS SERVICE
+            .header-title {
+                font-size: 20px;
+                color: #ffffff;
+                text-align: center;
+                user-select: none;
+            }
+
+            // ICON DISPLAY WHEN COLLAPSE
+            .header-icon {
+                display: none;
+            }
+
+            // STYLE SIDEBAR ITEM
+            ul li a {
+                color: #ffffff;
+                font-size: 16px;
+                line-height: 50px;
+                text-decoration: none;
+                display: block;
+                white-space: nowrap;
+                padding-left: 15px;
+                border-top: 1px solid rgba(255, 255, 255, .1);
+                border-bottom: 1px solid black;
+                transition: all 0.3s ease;
+
+                .icon {
+                    margin-right: 16px;
+                }
+
+                // BCZ HOVER TO DISPLAY FULL WIDTH
+                .title {
+                    display: inline-block;
+                }
+
+                &:hover,
+                &:active {
+                    transition: all 0s ease;
+                    background: #05305a;
+                    box-shadow: inset 5px 5px 10px #021324, inset -5px -5px 10px #084d90;
+                    .icon,.title{
+                        color: #ff5252;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            // ACTIVE SIDEBAR ITEM
+            .active-bar {
+                box-shadow: inset 5px 5px 10px #021324, inset -5px -5px 10px #084d90;
+                .icon,.title{
+                    color: #ff5252;
+                    font-weight: bold;
+                }
+            }
+        }
+
+    }
+}
