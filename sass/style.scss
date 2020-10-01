@@ -170,11 +170,17 @@ textarea {
                 // GROUP SMS RADIO BUTTON
                 .check {
                     p {
-                        margin-top: 10px !important;
+                        margin-top: 10px;
                     }
 
                     span::before {
-                        box-shadow: 5px 5px 10px #8e91a8, -5px -5px 10px #fcffff;
+                        border: none;
+                        box-shadow: inset 5px 5px 10px #8e91a8, inset -5px -5px 10px #fcffff;
+                    }
+                    span::before,span::after {
+                        margin: 2px;
+                        width: 20px;
+                        height: 20px;
                     }
                 }
 
