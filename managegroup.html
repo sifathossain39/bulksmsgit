@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulk SMS | Atmotech</title>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/material-icon.css" />
+    <link rel="stylesheet" href="./css/materialize.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <!-- TOP NAVBAR -->
+    <div class="navbar navbar-dark navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <div class="logo text-center">
+                <span><img class="img-fluid d-none nav-icon" src="./images/logo-alt.png" alt="" /></span>
+                <a class="navbar-brand logo-title m-0" href="index.html">ATMOTECH</a>
+            </div>
+
+            <!-- FOR 0 TO 767PX -->
+            <div class="hamburger navbar-toggler border-0" data-toggle="collapse" data-target="#navbarNav">
+                <div class="hamburger_inner">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+            </div>
+
+            <!-- FOR 768 TO MAX -->
+            <div class="hamburger sidetoggle d-none d-md-block">
+                <div class="hamburger_inner">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+            </div>
+
+            <!-- MAIN NAVBAR RIGHT SIDE AND SMALL SCREEN NAVBAR -->
+            <div id="navbarNav" class="collapse navbar-collapse mynav">
+                <!-- USER INFO -->
+                <ul class="navbar-nav ml-auto d-none d-md-block">
+                    <div class="dropdown mr-5">
+                        <a class="btn waves-effect dropdown-toggle" href="#" data-toggle="dropdown">Sifat Hossain</a>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Balance: 10.00 BDT</a>
+                            <a class="dropdown-item" href="updatepro.html"><i class="fas fa-user mr-2"></i>Update
+                                Profile</a>
+                            <a class="dropdown-item" href="changepass.html"><i class="fas fa-key mr-2"></i>Change
+                                Password</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="login.html"><i
+                                    class="fas fa-sign-out-alt mr-2"></i>Logout</a>
+                        </div>
+                    </div>
+                </ul>
+
+                <!-- SMALL SCREEN NAVBAR -->
+                <ul class="navbar-nav d-md-none text-center navbar-sm">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sendsms.html">Send SMS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bulksms.html">Bulk SMS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="groupsms.html">Group SMS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="smslog.html">SMS Log</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="managegroup.html">Manage Group</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="updatepro.html">Update Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="usermanual.html">User Manual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- TOP NAVBAR END -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main_container">
+        <!-- SIDEBAR START  -->
+        <div class="sidebar">
+            <div class="sidebar_inner">
+                <i class="header-icon mb-3 mt-4 fas fa-paper-plane"></i>
+                <div class="header-title my-3">Bulk SMS Service</div>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span class="icon"><i class="fas fa-envelope"></i></span>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sendsms.html">
+                            <span class="icon"><i class="fas fa-envelope"></i></span>
+                            <span class="title">Send SMS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bulksms.html">
+                            <span class="icon"><i class="fas fa-envelope"></i></span>
+                            <span class="title">Bulk SMS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="groupsms.html">
+                            <span class="icon"><i class="fas fa-book-open"> </i></span>
+                            <span class="title">Group SMS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="smslog.html">
+                            <span class="icon"><i class="fas fa-users"> </i></span>
+                            <span class="title">SMS Log</span>
+                        </a>
+                    </li>
+                    <li class="active-bar">
+                        <a href="managegroup.html">
+                            <span class="icon"><i class="fas fa-money-check"> </i></span>
+                            <span class="title">Manage Group</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="updatepro.html">
+                            <span class="icon"><i class="fas fa-user"> </i></span>
+                            <span class="title">Update Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="usermanual.html">
+                            <span class="icon"><i class="fas fa-book"> </i></span>
+                            <span class="title">User Manual</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- SIDEBAR END -->
+
+        <div class="container-fluid content-page">
+
+            <!-- MANAGE GROUP START -->
+            <div id="manageGroup" class="row p-0 px-sm-4">
+                <!-- TABS BAR -->
+                <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+                    <li class="tab"><a class="active" href="#addGroup">Add Group</a></li>
+                    <li class="tab"><a href="#groupNumber">Add Group Number</a></li>
+                    <li class="tab"><a href="#manageContract">Manage Contract</a></li>
+                </ul>
+                <!-- TAB CONTENT :- ADD GROUP -->
+                <div id="addGroup" class="col tabbox">
+                    <form class="mt-5">
+                        <div class="form-row">
+                            <div class="col-xl-6 mx-auto">
+                                <label for="">Enter Group Name:</label>
+                                <input type="text" class="pl-4" id="groupName">
+                                <button class="btn waves-effect">Add</button>
+                            </div>
+                        </div>
+                        <div class="form-row mx-auto">
+                            
+                        </div>
+                    </form>
+                </div>
+                <div id="groupNumber" class="col tabbox">
+                    <p>Test 2</p>
+                </div>
+                <div id="manageContract" class="col tabbox">
+                    <p>Test 4</p>
+                </div>
+            </div>
+            <!-- MANAGE GROUP END -->
+
+        </div>
+    </div>
+
+    <!-- JS FILES -->
+    <script src="./js/jquery.slim.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -95,3 +95,12 @@ var wordCounter = {
 $(document).ready(function(){
   $('select').formSelect();
 });
+
+// MATERIALIZE TAB INITIALIZTION
+
+$(document).ready(function(){
+  $('.tabs').tabs({
+    duration:500
+  });
+
+});

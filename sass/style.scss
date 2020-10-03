@@ -119,7 +119,7 @@ textarea {
 
             #sendSms,
             #bulkSms,
-            #groupSms {
+            #groupSms{
 
                 // CUSTOMIZE INPUT/TEXT BOX START =================
                 input,
@@ -213,6 +213,63 @@ textarea {
                 // Material modal overlapping fixed [PREVIEW MODAL] END =====================
 
 
+            }
+        }
+
+        #manageGroup{
+
+
+            ul{
+                
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                background: #c5cae9;
+                box-shadow:  5px 5px 10px #969ab1,  -5px -5px 10px #f4faff;
+            }
+
+
+            a{
+                text-decoration: none;
+                color: #000000;
+                font-weight: bold;
+            }
+
+            .tabbox{
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff;
+            }
+            form{
+                
+                // CUSTOMIZE INPUT/TEXT BOX START ---------------------
+                input,
+                textarea {
+                    border: none;
+                    outline: none;
+                    border-radius: 15px;
+                    background: #c5cae9;
+                    color: #000000;
+                    box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff;
+                }
+
+                input {
+                    padding-left: 10px;
+                }
+
+                input:focus,
+                textarea:focus {
+                    box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff !important;
+                }
+
+                // CUSTOMIZE INPUT/TEXT BOX END ---------------------
+                
+                // CHANGE FONT AND COLOR
+                p,
+                span,
+                label {
+                    font-size: 14px;
+                    color: #303030;
+                }
             }
         }
     }
