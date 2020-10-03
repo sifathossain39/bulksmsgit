@@ -239,7 +239,9 @@ textarea {
                 border-bottom-left-radius: 10px;
                 box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff;
             }
-            form{
+
+
+            #addGroup{
                 
                 // CUSTOMIZE INPUT/TEXT BOX START ---------------------
                 input,
@@ -254,6 +256,7 @@ textarea {
 
                 input {
                     padding-left: 10px;
+                    width: 100%;
                 }
 
                 input:focus,
@@ -267,8 +270,23 @@ textarea {
                 p,
                 span,
                 label {
-                    font-size: 14px;
+                    font-size: 16px;
                     color: #303030;
+                }
+
+                .card{
+                    background: #c5cae9;
+                    input{
+                        width: initial;
+                        border-top-right-radius: 0px;
+                        border-bottom-right-radius: 0px;
+                    }
+                    button{
+                        border: none;
+                        height:45px;
+                        border-top-right-radius: 15px;
+                        border-bottom-right-radius: 15px;
+                    }
                 }
             }
         }
