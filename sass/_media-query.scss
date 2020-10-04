@@ -53,6 +53,27 @@
                     }
                 }
             }
+
+            // TAB SHADOW REMOVE IN SMALL SCREEN
+            #manageGroup{
+                ul{
+                    border-top-right-radius: 0px;
+                    border-top-left-radius: 0px;
+                    box-shadow: none;
+                    li:first-child{
+                        margin-left: 20px;
+                    }
+                    li:last-child{
+                        margin-right: 20px;
+                    }
+                }
+
+                .tabbox{
+                    border-bottom-right-radius: 0px;
+                    border-bottom-left-radius: 0px;
+                    box-shadow: none;
+                }
+            } 
         }
 
     }
