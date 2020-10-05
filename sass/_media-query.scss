@@ -54,7 +54,7 @@
                 }
             }
 
-            // TAB SHADOW REMOVE IN SMALL SCREEN
+            // TAB SHADOW REMOVE IN SMALL SCREEN START ==============
             #manageGroup{
                 ul{
                     border-top-right-radius: 0px;
@@ -73,7 +73,8 @@
                     border-bottom-left-radius: 0px;
                     box-shadow: none;
                 }
-            } 
+            }
+            // TAB SHADOW REMOVE IN SMALL SCREEN END XXXXXXXXXXXXXXX
         }
 
     }

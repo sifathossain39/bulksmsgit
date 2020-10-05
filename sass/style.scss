@@ -12,7 +12,6 @@
 
 body {
     background: #c5cae9;
-    overflow: hidden;
 }
 
 input:focus,
@@ -119,7 +118,7 @@ textarea {
 
             #sendSms,
             #bulkSms,
-            #groupSms{
+            #groupSms {
 
                 // CUSTOMIZE INPUT/TEXT BOX START =================
                 input,
@@ -177,7 +176,9 @@ textarea {
                         border: none;
                         box-shadow: inset 5px 5px 10px #8e91a8, inset -5px -5px 10px #fcffff;
                     }
-                    span::before,span::after {
+
+                    span::before,
+                    span::after {
                         margin: 2px;
                         width: 20px;
                         height: 20px;
@@ -210,39 +211,46 @@ textarea {
                     }
                 }
 
-                // Material modal overlapping fixed [PREVIEW MODAL] END =====================
+                // Material modal overlapping fixed [PREVIEW MODAL] END XXXXXXXXXXXXXXXXXXXXXXX
 
 
             }
         }
 
-        #manageGroup{
 
+        // STYLE MANAGE GROUP SECTION START ================
 
-            ul{
-                
+        #manageGroup {
+
+            // TAB HEADER START
+            ul {
+
                 border-top-right-radius: 10px;
                 border-top-left-radius: 10px;
                 background: #c5cae9;
-                box-shadow:  5px 5px 10px #969ab1,  -5px -5px 10px #f4faff;
+                box-shadow: 5px 5px 10px #969ab1, -5px -5px 10px #f4faff;
             }
 
 
-            a{
+            a {
                 text-decoration: none;
                 color: #000000;
                 font-weight: bold;
             }
+            // TAB HEADER END
 
-            .tabbox{
+            // TAB ITEMS AREA
+            .tabbox {
                 border-bottom-right-radius: 10px;
                 border-bottom-left-radius: 10px;
                 box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff;
             }
 
 
-            #addGroup{
-                
+            // 1ST ITEM ADD GROUP SECTION START =============
+
+            #addGroup {
+
                 // CUSTOMIZE INPUT/TEXT BOX START ---------------------
                 input,
                 textarea {
@@ -264,8 +272,8 @@ textarea {
                     box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff !important;
                 }
 
-                // CUSTOMIZE INPUT/TEXT BOX END ---------------------
-                
+                // CUSTOMIZE INPUT/TEXT BOX END xxxxxxxxxxx
+
                 // CHANGE FONT AND COLOR
                 p,
                 span,
@@ -274,31 +282,86 @@ textarea {
                     color: #303030;
                 }
 
-                .card{
+                // STYLING BUTTONS IN ADD GROUP START =========
+                button {
+                    font-weight: bold;
+                    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+                }
+
+                button:hover,
+                button:focus,
+                button:active {
+                    background: transparent;
+                }
+
+                button:active {
+
+                    box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff !important;
+                }
+
+                // STYLING BUTTONS IN ADD GROUP START XXXXXXX
+
+                // SEARCH GROUP AND TABLE START =======
+                .card {
                     background: #c5cae9;
-                    input{
+
+                    // SEARCH BOX
+                    input {
                         width: initial;
                         border-top-right-radius: 0px;
                         border-bottom-right-radius: 0px;
                     }
-                    button{
+
+                    // SEARCH BUTTON
+                    button {
                         border: none;
-                        height:45px;
+                        height: 45px;
                         text-transform: initial;
                         border-top-right-radius: 15px;
                         border-bottom-right-radius: 15px;
-                        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2) !important;
                     }
-                    button:hover,button:focus{
-                        background: transparent;
+
+                    // TABLE START ============
+                    .table-wrap {
+                        height: 650px;
+                        display: block;
+                        overflow-y: auto;
+                        border-top: 1px solid rgb(222, 226, 230);
                     }
-                    button:active{
-                        box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff !important;
-                        font-weight: bold;
+
+                    table {
+                        position: relative;
+                        border-collapse: collapse;
+
+                        thead th {
+                            position: sticky;
+                            top: -1px;
+                            border: none;
+                            background: #c5cae9;
+                            border: 1px solid rgb(222, 226, 230);
+                        }
+
+                        tbody th:nth-child(1),
+                        tbody tr:nth-child(1) td {
+                            border-top: none;
+                        }
+
+                        i.fa-edit {
+                            color: #0d47a1;
+                        }
+
+                        i.fa-trash-alt {
+                            color: #ef5350;
+                        }
                     }
+                    // TABLE END xxxxxxxx
                 }
+                // SEARCH GROUP AND TABLE END xxxxxxxxxxx
             }
+            // 1ST ITEM ADD GROUP SECTION END xxxxxxxxxxxxxxx
         }
+
+        // STYLE MANAGE GROUP SECTION END XXXXXXXXXXXXXXXXXXXXXXXXXXXX
     }
 
 }
