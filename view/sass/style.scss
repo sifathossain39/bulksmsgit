@@ -272,6 +272,28 @@ textarea {
 
                 // STYLING BUTTONS IN ADD GROUP START XXXXXXX
 
+                // SELECT OPTION CUSTOMIZE 
+
+                input, textarea {
+                    border: none;
+                    outline: none;
+                    border-radius: 15px;
+                    background: #c5cae9;
+                    color: #000000;
+                    box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff;
+                }
+
+                input {
+                    padding-left: 10px;
+                }
+                
+                input:focus,
+                textarea:focus {
+                    box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff !important;
+                }
+
+                // CUSTOMIZE INPUT/TEXT BOX END ===================
+
                 // SEARCH GROUP AND TABLE START =======
                 .card {
                     background: #c5cae9;
