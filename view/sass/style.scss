@@ -185,35 +185,6 @@ textarea {
                     }
                 }
 
-                // Material modal overlapping fixed [PREVIEW MODAL]
-                .modal {
-                    right: initial;
-                    background-color: transparent;
-                    padding: initial;
-                    max-height: initial;
-                    margin: initial;
-                    border-radius: initial;
-                    will-change: initial;
-
-                    .modal-content {
-                        padding: initial;
-
-                        .close span {
-                            font-size: 1.5rem;
-                        }
-
-                        .modal-footer {
-                            .btn {
-                                margin: .25rem;
-                                text-transform: initial;
-                            }
-                        }
-                    }
-                }
-
-                // Material modal overlapping fixed [PREVIEW MODAL] END XXXXXXXXXXXXXXXXXXXXXXX
-
-
             }
         }
 
@@ -237,6 +208,7 @@ textarea {
                 color: #000000;
                 font-weight: bold;
             }
+
             // TAB HEADER END
 
             // TAB ITEMS AREA
@@ -249,11 +221,10 @@ textarea {
 
             // 1ST ITEM ADD GROUP SECTION START =============
 
-            #addGroup {
+            #addGroup,#groupNumber {
 
                 // CUSTOMIZE INPUT/TEXT BOX START ---------------------
-                input,
-                textarea {
+                .myinput {
                     border: none;
                     outline: none;
                     border-radius: 15px;
@@ -267,8 +238,7 @@ textarea {
                     width: 100%;
                 }
 
-                input:focus,
-                textarea:focus {
+                .myinput:focus {
                     box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff !important;
                 }
 
@@ -283,18 +253,19 @@ textarea {
                 }
 
                 // STYLING BUTTONS IN ADD GROUP START =========
-                button {
+                .mybutton {
+                    text-transform: capitalize;
                     font-weight: bold;
                     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
                 }
 
-                button:hover,
-                button:focus,
-                button:active {
+                .mybutton:hover,
+                .mybutton:focus,
+                .mybutton:active {
                     background: transparent;
                 }
 
-                button:active {
+                .mybutton:active {
 
                     box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff !important;
                 }
@@ -313,10 +284,9 @@ textarea {
                     }
 
                     // SEARCH BUTTON
-                    button {
+                    .mybutton {
                         border: none;
                         height: 45px;
-                        text-transform: initial;
                         border-top-right-radius: 15px;
                         border-bottom-right-radius: 15px;
                     }
@@ -354,14 +324,64 @@ textarea {
                             color: #ef5350;
                         }
                     }
+
                     // TABLE END xxxxxxxx
                 }
+
                 // SEARCH GROUP AND TABLE END xxxxxxxxxxx
             }
+
             // 1ST ITEM ADD GROUP SECTION END xxxxxxxxxxxxxxx
         }
 
         // STYLE MANAGE GROUP SECTION END XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+        // Material modal overlapping fixed START XXXXXXXXXXXXXXXXXXXXXXX
+        .modal {
+            right: initial;
+            background-color: transparent;
+            padding: initial;
+            max-height: initial;
+            margin: initial;
+            border-radius: initial;
+            will-change: initial;
+
+            .modal-content {
+                padding: initial;
+
+                .close span {
+                    font-size: 1.8rem !important;
+                    color: red !important;
+                }
+
+                .modal-body {
+
+                    // CUSTOMIZE INPUT START =================
+                    input {
+                        border: 2px solid #ac9797;
+                        height: calc(1.5em + .75rem + 2px);
+                        border-radius: 5px !important;
+                    }
+
+                    input:focus {
+                        border: 2px solid #4e4e4e;
+                    }
+
+                    // CUSTOMIZE INPUT/TEXT BOX END ===================
+                }
+
+                .modal-footer {
+                    .btn {
+                        margin: .25rem;
+                        text-transform: initial;
+                    }
+                }
+            }
+        }
+
+        // Material modal overlapping fixed END XXXXXXXXXXXXXXXXXXXXXXX
     }
 
 }
