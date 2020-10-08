@@ -104,3 +104,20 @@ $(document).ready(function(){
   });
 
 });
+
+// =============================================================
+// KEEP SELECTED TAB ON PAGE AFTER REFRESH
+$('ul li a').click(function(e){
+  e.preventDefault();
+  $(this).tab('show');
+  window.scrollTo(0, -200);
+});
+
+$('ul > li > a').on('shown.bs.tab', function(e){
+  var id = $(e.target).attr("href").substr(1);
+  window.location.hash = id;
+});
+
+var hash = window.location.hash;
+$('ul li a[href="' + hash + '"]').tab('show');
+// =============================================================

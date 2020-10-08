@@ -12,6 +12,7 @@
 
 body {
     background: #c5cae9;
+
 }
 
 input:focus,
@@ -60,6 +61,7 @@ form {
 textarea {
     resize: none;
 }
+
 
 // GLOBAL END ===========================
 
@@ -118,7 +120,7 @@ textarea {
 
             #sendSms,
             #bulkSms,
-            #groupSms {
+            #groupSms{
 
                 // CUSTOMIZE INPUT/TEXT BOX START =================
                 input,
@@ -145,7 +147,7 @@ textarea {
                 // INPUT [type file] 
                 .file-field {
                     .btn {
-                        line-height: 2rem;
+                        line-height: 2.5rem;
                     }
                 }
 
@@ -219,27 +221,44 @@ textarea {
             }
 
 
-            // 1ST ITEM ADD GROUP SECTION START =============
+            // TAB CONTENT SECTION START =============
 
-            #addGroup,#groupNumber {
+            #addGroup,#groupNumber,#manageContact {
 
                 // CUSTOMIZE INPUT/TEXT BOX START ---------------------
                 .myinput {
+                    width: 100%;
                     border: none;
                     outline: none;
                     border-radius: 15px;
                     background: #c5cae9;
                     color: #000000;
                     box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff;
+                    
+                    .select-wrapper input.select-dropdown{
+                        margin-bottom: 0;
+                    }
                 }
 
                 input {
                     padding-left: 10px;
                     width: 100%;
+                    border: none !important;
                 }
-
+                
                 .myinput:focus {
                     box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff !important;
+                }
+
+                .select-wrapper+label {
+                    margin-top: -15px;
+                }
+
+                // INPUT [type file] 
+                .file-field {
+                    .btn {
+                        line-height: 2.5rem;
+                    }
                 }
 
                 // CUSTOMIZE INPUT/TEXT BOX END xxxxxxxxxxx
@@ -272,28 +291,7 @@ textarea {
 
                 // STYLING BUTTONS IN ADD GROUP START XXXXXXX
 
-                // SELECT OPTION CUSTOMIZE 
-
-                input, textarea {
-                    border: none;
-                    outline: none;
-                    border-radius: 15px;
-                    background: #c5cae9;
-                    color: #000000;
-                    box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff;
-                }
-
-                input {
-                    padding-left: 10px;
-                }
                 
-                input:focus,
-                textarea:focus {
-                    box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff !important;
-                }
-
-                // CUSTOMIZE INPUT/TEXT BOX END ===================
-
                 // SEARCH GROUP AND TABLE START =======
                 .card {
                     background: #c5cae9;
@@ -304,6 +302,12 @@ textarea {
                         border-top-right-radius: 0px;
                         border-bottom-right-radius: 0px;
                     }
+                    .input-contact{
+                        width: 100%;
+                        border-top-right-radius: 15px !important;
+                        border-bottom-right-radius: 15px !important;
+                        margin-top: 15px;
+                    }
 
                     // SEARCH BUTTON
                     .mybutton {
@@ -311,6 +315,12 @@ textarea {
                         height: 45px;
                         border-top-right-radius: 15px;
                         border-bottom-right-radius: 15px;
+                    }
+
+                    .btn-contact{
+                        height: 36px !important;
+                        border-radius: .25rem !important;
+                        margin: 18px 0px 0px 32px;
                     }
 
                     // TABLE START ============
