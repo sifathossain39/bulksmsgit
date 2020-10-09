@@ -227,7 +227,7 @@ textarea {
 
                 // CUSTOMIZE INPUT/TEXT BOX START ---------------------
                 .myinput {
-                    width: 100%;
+                    width: 100% !important;
                     border: none;
                     outline: none;
                     border-radius: 15px;
@@ -242,7 +242,7 @@ textarea {
 
                 input {
                     padding-left: 10px;
-                    width: 100%;
+                    width: 100% !important;
                     border: none !important;
                 }
                 
