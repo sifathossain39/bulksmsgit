@@ -160,14 +160,16 @@
 
             <!-- MANAGE GROUP START -->
             <div id="manageGroup" class="row p-0 px-sm-4">
-                <!-- TABS BAR -->
-                <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+                <!-- TAB BAR -->
+                <ul id="myTab" class="tabs tabs-fixed-width tab-demo z-depth-1">
                     <li class="tab"><a href="#addGroup">Add Group</a></li>
                     <li class="tab"><a href="#groupNumber">Add Contact Number</a></li>
                     <li class="tab"><a href="#manageContact">Manage Contacts</a></li>
                 </ul>
+
                 <!-- TAB CONTENT :- ADD GROUP START ================ -->
                 <div id="addGroup" class="col tabbox">
+                    <!-- ADDING NEW GROUP NAME -->
                     <form class="my-5">
                         <div class="form-row">
                             <div class="px-5 col-md-8 col-lg-6 col-xl-5 mx-auto">
@@ -177,8 +179,10 @@
                             </div>
                         </div>
                     </form>
+                    <!-- SEARCH GROUP AND SHOW GROUP DETAILS -->
                     <div class="card">
                         <div class="card-header">
+                            <!-- SEARCH -->
                             <div class="input-group mb-2">
                                 <input type="text" class="myinput form-control pl-4" id="searchGroup"
                                     placeholder="Search Group">
@@ -188,6 +192,7 @@
                             </div>
                         </div>
                         <div class="card-body">
+                            <!-- GROUP DETAILS TABLE -->
                             <div class="table-responsive table-wrap">
                                 <table class="table table-bordered table-condensed table-hover table-striped">
                                     <thead>
@@ -211,7 +216,7 @@
                                                         class="fas fa-trash-alt"></i></a>
                                             </td>
 
-                                            <!-- Modal Structure [edit] -->
+                                            <!-- ACTION EDIT -->
                                             <div class="modal fade" id="modalEdit">
                                                 <div class="modal-dialog modal-dialog-centered">
                                                     <div class="modal-content">
@@ -245,7 +250,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- Modal Structure [delete] -->
+
+                                            <!-- ACTION EDIT -->
                                             <div class="modal fade" id="modalDelete">
                                                 <div class="modal-dialog modal-dialog-centered">
                                                     <div class="modal-content">
@@ -290,9 +296,7 @@
 
                 <!-- TAB CONTENT :- ADD CONTACT NUMBER START ================ -->
                 <div id="groupNumber" class="col tabbox">
-
                     <div class="row">
-
                         <!-- Add Single Contract in group -->
                         <div class="col-xl-6">
                             <form class="my-5 px-5">
@@ -420,11 +424,9 @@
                                             <td>Oifat</td>
                                             <td class="text-center">01718624208</td>
                                             <td class="text-center">
-                                                <a href="#contactEdit" data-toggle="modal"><i
-                                                        class="fas fa-edit"></i></a>
+                                                <a href="#contactEdit" data-toggle="modal"><i class="fas fa-edit"></i></a>
                                                 &nbsp;|&nbsp;
-                                                <a href="#contactDelete" data-toggle="modal"><i
-                                                        class="fas fa-trash-alt"></i></a>
+                                                <a href="#contactDelete" data-toggle="modal"><i class="fas fa-trash-alt"></i></a>
                                             </td>
 
                                             <!-- Modal Structure [edit] -->
