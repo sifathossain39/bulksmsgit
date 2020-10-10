@@ -158,8 +158,8 @@
                     <form id="bulkSms">
 
                         <!-- UPLOAD EXCEL FILE -->
-                        <div class="form-row justify-content-center my-3 mx-5 mx-xl-0">
-                            <div class="col-12 col-xl-8">
+                        <div class="form-row justify-content-center my-4 mx-5 mx-xl-0">
+                            <div class="col-12 col-xl-9">
                                 <div class="file-field input-field">
                                     <div class="btn waves-effect light-blue col-12 col-sm-5 col-lg-4 mb-3 mb-sm-0">
                                         <span class="select-file">Select Excel File</span>
@@ -172,9 +172,9 @@
                             </div>
                         </div>
 
-                        <!-- SELECT SHEET NAME AND MOBILE COLUMN -->
+                        <!-- SELECT SHEET NAME / MOBILE COLUMN / MESSAGE COLUMN -->
                         <div class="form-row justify-content-center mb-3 mx-5 mx-xl-0">
-                            <div class="col-12 col-md-6 col-xl-4 mb-3 mb-md-0 pr-4">
+                            <div class="col-12 col-md-6 col-xl-3 mb-3 mb-md-0 pr-4">
                                 <div class="input-field">
                                     <select>
                                         <option value="" disabled selected>Choose Sheet Name</option>
@@ -183,20 +183,29 @@
                                     <label>Sheet Name</label>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-xl-4 pr-4">
+                            <div class="col-12 col-md-6 col-xl-3 mb-3 mb-xl-0 pr-4">
                                 <div class="input-field">
                                     <select>
-                                        <option value="" disabled selected>Choose Column</option>
+                                        <option value="" disabled selected>Choose Number Column</option>
                                         <option value="1">Option 1</option>
                                     </select>
                                     <label>Mobile Number Column</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-3 pr-4">
+                                <div class="input-field">
+                                    <select>
+                                        <option value="" disabled selected>Choose Message Column</option>
+                                        <option value="1">Option 1</option>
+                                    </select>
+                                    <label>Message Column</label>
                                 </div>
                             </div>
                         </div>
 
                         <!-- TYPE MESSAGE -->
                         <div class="form-row justify-content-center mx-5 mx-xl-0">
-                            <div class="col-12 col-md-12 col-lg-7 col-xl-4">
+                            <div class="col-12 col-md-12 col-lg-7 col-xl-5">
                                 <label for="smsArea">Enter Message</label>
                                 <textarea class="form-control" id="smsArea" rows="5"
                                     placeholder="Type Your Message Here"></textarea>

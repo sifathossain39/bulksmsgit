@@ -120,7 +120,7 @@ textarea {
 
             #sendSms,
             #bulkSms,
-            #groupSms{
+            #groupSms {
 
                 // CUSTOMIZE INPUT/TEXT BOX START =================
                 input,
@@ -196,19 +196,31 @@ textarea {
         #manageGroup {
 
             // TAB HEADER START
-            ul {
+            .tabs {
 
                 border-top-right-radius: 10px;
                 border-top-left-radius: 10px;
                 background: #c5cae9;
                 box-shadow: 5px 5px 10px #969ab1, -5px -5px 10px #f4faff;
-            }
 
+                a {
+                    text-decoration: none;
+                    color: #f4511e;
+                    font-weight: bold;
+                }
 
-            a {
-                text-decoration: none;
-                color: #000000;
-                font-weight: bold;
+                a:hover,a:focus,a:active {
+                    color: #ff7043;
+                }
+
+                a:focus.active {
+                    background-color: #ffccbc;
+                }
+
+                .indicator {
+                    background-color: #f4511e;
+                }
+
             }
 
             // TAB HEADER END
@@ -220,10 +232,11 @@ textarea {
                 box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff;
             }
 
-
             // TAB CONTENT SECTION START =============
 
-            #addGroup,#groupNumber,#manageContact {
+            #addGroup,
+            #groupNumber,
+            #manageContact {
 
                 // CUSTOMIZE INPUT/TEXT BOX START ---------------------
                 .myinput {
@@ -234,20 +247,20 @@ textarea {
                     background: #c5cae9;
                     color: #000000;
                     box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff;
-                    
-                    .select-wrapper input.select-dropdown{
+
+                    .select-wrapper input.select-dropdown {
                         margin-bottom: 0;
                     }
                 }
 
-                .input-field{
+                .input-field {
                     input {
                         padding-left: 10px;
                         width: 100% !important;
                         border: none !important;
                     }
                 }
-                
+
                 .myinput:focus {
                     box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff !important;
                 }
@@ -263,7 +276,7 @@ textarea {
                     }
                 }
 
-                .searchbox{
+                .searchbox {
                     width: initial !important;
                 }
 
@@ -297,7 +310,7 @@ textarea {
 
                 // STYLING BUTTONS IN ADD GROUP START XXXXXXX
 
-                
+
                 // SEARCH GROUP AND TABLE START =======
                 .card {
                     background: #c5cae9;
@@ -308,7 +321,8 @@ textarea {
                         border-top-right-radius: 0px;
                         border-bottom-right-radius: 0px;
                     }
-                    .input-contact{
+
+                    .input-contact {
                         width: 100%;
                         border-top-right-radius: 15px !important;
                         border-bottom-right-radius: 15px !important;
@@ -323,7 +337,7 @@ textarea {
                         border-bottom-right-radius: 15px;
                     }
 
-                    .btn-contact{
+                    .btn-contact {
                         height: 36px !important;
                         border-radius: .25rem !important;
                         margin: 18px 0px 0px 32px;
@@ -406,7 +420,8 @@ textarea {
                         border-radius: 5px !important;
                         padding-left: 8px;
                     }
-                    input[type="number"]{
+
+                    input[type="number"] {
                         border: 2px solid #5f98ce !important;
                     }
 
@@ -414,7 +429,7 @@ textarea {
                         border: 2px solid #00897b !important;
                     }
 
-                    input[type="number"]:focus{
+                    input[type="number"]:focus {
                         border: 2px solid #3d70a0 !important;
                     }
 
