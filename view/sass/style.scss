@@ -227,7 +227,7 @@ textarea {
 
                 // CUSTOMIZE INPUT/TEXT BOX START ---------------------
                 .myinput {
-                    width: 100% !important;
+                    width: 100%;
                     border: none;
                     outline: none;
                     border-radius: 15px;
@@ -240,10 +240,12 @@ textarea {
                     }
                 }
 
-                input {
-                    padding-left: 10px;
-                    width: 100% !important;
-                    border: none !important;
+                .input-field{
+                    input {
+                        padding-left: 10px;
+                        width: 100% !important;
+                        border: none !important;
+                    }
                 }
                 
                 .myinput:focus {
@@ -251,7 +253,7 @@ textarea {
                 }
 
                 .select-wrapper+label {
-                    margin-top: -15px;
+                    margin-top: -18px;
                 }
 
                 // INPUT [type file] 
@@ -259,6 +261,10 @@ textarea {
                     .btn {
                         line-height: 2.5rem;
                     }
+                }
+
+                .searchbox{
+                    width: initial !important;
                 }
 
                 // CUSTOMIZE INPUT/TEXT BOX END xxxxxxxxxxx
@@ -371,6 +377,7 @@ textarea {
 
 
         // Material modal overlapping fixed START XXXXXXXXXXXXXXXXXXXXXXX
+
         .modal {
             right: initial;
             background-color: transparent;
@@ -392,13 +399,15 @@ textarea {
 
                     // CUSTOMIZE INPUT START =================
                     input {
-                        border: 2px solid #ac9797;
-                        height: calc(1.5em + .75rem + 2px);
+                        width: initial !important;
+                        border: 2px solid #80cbc4 !important;
+                        height: calc(1.5em + .75rem + 2px) !important;
                         border-radius: 5px !important;
+                        padding-left: 8px;
                     }
 
                     input:focus {
-                        border: 2px solid #4e4e4e;
+                        border: 2px solid #00897b !important;
                     }
 
                     // CUSTOMIZE INPUT/TEXT BOX END ===================
