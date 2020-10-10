@@ -399,15 +399,23 @@ textarea {
 
                     // CUSTOMIZE INPUT START =================
                     input {
-                        width: initial !important;
+                        // width: initial !important;
+                        width: 45% !important;
                         border: 2px solid #80cbc4 !important;
-                        height: calc(1.5em + .75rem + 2px) !important;
+                        height: calc(1.5em + .75rem + 0px) !important;
                         border-radius: 5px !important;
                         padding-left: 8px;
+                    }
+                    input[type="number"]{
+                        border: 2px solid #5f98ce !important;
                     }
 
                     input:focus {
                         border: 2px solid #00897b !important;
+                    }
+
+                    input[type="number"]:focus{
+                        border: 2px solid #3d70a0 !important;
                     }
 
                     // CUSTOMIZE INPUT/TEXT BOX END ===================

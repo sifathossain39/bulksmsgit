@@ -9,7 +9,6 @@ $(document).ready(function () {
 
 })
 
-
 // FOR TEXTAREA NUMBER INPUT
 jQuery.fn.ForceNumericOnly =
     function () {
