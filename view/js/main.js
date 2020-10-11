@@ -119,4 +119,7 @@ $('#myTab > li > a').on('shown.bs.tab', function(e){
 
 var hash = window.location.hash;
 $('#myTab li a[href="' + hash + '"]').tab('show');
-// =============================================================
+// ==================XXXXXXXXXXXXXXXXX==========================
+
+// INPUT DATE VALUE ALWAYS TODAY
+document.getElementById('dateForm').valueAsDate = new Date();

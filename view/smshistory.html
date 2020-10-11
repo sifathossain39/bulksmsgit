@@ -127,13 +127,13 @@
                             <span class="title">Group SMS</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="active-bar">
                         <a href="smshistory.html">
                             <span class="icon"><i class="fas fa-users"> </i></span>
                             <span class="title">SMS History</span>
                         </a>
                     </li>
-                    <li class="active-bar">
+                    <li>
                         <a href="managegroup.html">
                             <span class="icon"><i class="fas fa-money-check"> </i></span>
                             <span class="title">Manage Group</span>
@@ -158,38 +158,40 @@
 
         <div class="container-fluid content-page">
 
-            <!-- MANAGE GROUP START -->
-            <div id="manageGroup" class="row p-0 px-sm-4">
+            <!-- SMS HISTORY START -->
+            <div id="smsHistory" class="row p-0 px-sm-4">
                 <!-- TAB BAR -->
                 <ul id="myTab" class="tabs tabs-fixed-width tab-demo z-depth-1">
-                    <li class="tab"><a href="#addGroup">Add Group</a></li>
-                    <li class="tab"><a href="#groupNumber">Add Contact Number</a></li>
-                    <li class="tab"><a href="#manageContact">Manage Contacts</a></li>
+                    <li class="tab"><a href="#smsReport">SMS Report</a></li>
+                    <li class="tab"><a href="#messageReport">Message Report</a></li>
                 </ul>
 
-                <!-- TAB CONTENT :- ADD GROUP START ================ -->
-                <div id="addGroup" class="col tabbox">
-                    <!-- ADDING NEW GROUP NAME -->
-                    <form class="my-5">
-                        <div class="form-row">
-                            <div class="px-5 col-md-8 col-lg-6 col-xl-5 mx-auto">
-                                <label for="">Enter Group Name:</label>
-                                <input type="text" class="myinput form-control pl-4" id="groupName" autocomplete="off">
-                                <button class="btn mybutton mt-3 d-block waves-effect" type="button">Add</button>
-                            </div>
-                        </div>
-                    </form>
-                    <!-- SEARCH GROUP AND SHOW GROUP DETAILS -->
+                <!-- TAB CONTENT :- SMS Report START ================ -->
+                <div id="smsReport" class="col tabbox">
+
+                    <!-- DATE SEARCH AND SHOW SMS REPORT -->
                     <div class="card">
                         <div class="card-header">
-                            <!-- SEARCH -->
-                            <div class="input-group mb-2">
-                                <input type="text" class="myinput form-control searchbox pl-4" id="searchGroup"
-                                    placeholder="Search Group">
-                                <div class="input-group-append">
-                                    <button class="btn mybutton waves-effect" type="button">Search</button>
+                            <!-- INPUT DATE AND SEARCH -->
+                            <form class="px-5">
+                                <div class="form-row">
+                                    <div class="col-md-6 col-xl-4">
+                                        <div class="form-group date row">
+                                            <input class="form-control input-contact myinput px-4" type="date" value=""
+                                                id="dateForm">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-4">
+                                        <input type="text" class="myinput input-contact form-control pl-4"
+                                            id="searchnumber" placeholder="Enter Name or Number" autocomplete="off">
+                                    </div>
+                                    <div class="col-md-6 col-xl-4">
+                                        <button
+                                            class="btn mybutton btn-contact d-block waves-effect light-blue-text text-darken-2"
+                                            type="button">Search</button>
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                         <div class="card-body">
                             <!-- GROUP DETAILS TABLE -->
@@ -291,98 +293,11 @@
                         </div>
                     </div>
                 </div>
-                <!-- TAB CONTENT :- ADD GROUP END xxxxxxxxxxxxxxxxxx -->
+                <!-- TAB CONTENT :- SMS ReportEND xxxxxxxxxxxxxxxxxx -->
 
 
-                <!-- TAB CONTENT :- ADD CONTACT NUMBER START ================ -->
-                <div id="groupNumber" class="col tabbox">
-                    <div class="row">
-                        <!-- Add Single Contract in group -->
-                        <div class="col-xl-6">
-                            <form class="my-5 px-5">
-                                <h3 class="text-center">Add Single Contract</h3>
-                                <div class="form-row my-3">
-                                    <label for="">Enter Contract Number</label>
-                                    <input type="number" class="myinput form-control pl-4" id="groupName"
-                                        autocomplete="off">
-                                </div>
-                                <div class="form-row mb-4">
-                                    <label for="">Enter Name</label>
-                                    <input type="number" class="myinput form-control pl-4" id="groupName"
-                                        autocomplete="off">
-                                </div>
-                                <div class="form-row">
-                                    <div class="input-field myinput">
-                                        <select>
-                                            <option value="" disabled selected>Select Group</option>
-                                            <option value="1">Sifat</option>
-                                        </select>
-                                        <label>Group Name</label>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <button class="btn mybutton mt-3 d-block waves-effect teal-text text-darken-1"
-                                        type="button">Add</button>
-                                </div>
-                            </form>
-                        </div>
-
-                        <!-- Add Contract From Excel -->
-                        <div class="col-xl-6">
-                            <form class="my-5 px-5">
-                                <h3 class="text-center">Add Contract From Excel</h3>
-                                <div class="form-row mb-3">
-                                    <div class="file-field input-field w-100">
-                                        <div class="btn waves-effect light-blue col-12 col-sm-6 mb-3 mb-sm-0">
-                                            <span class="select-file">Select Excel File</span>
-                                            <input class="myinput" type="file">
-                                        </div>
-                                        <div class="file-path-wrapper col-12 col-sm-6">
-                                            <input class="file-path validate text-muted myinput text-center" type="text"
-                                                disabled>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-row mb-3">
-                                    <div class="input-field myinput">
-                                        <select>
-                                            <option value="" disabled selected>Select Sheet</option>
-                                            <option value="1">Sheet A</option>
-                                        </select>
-                                        <label>Sheet Name</label>
-                                    </div>
-                                </div>
-                                <div class="form-row mb-3">
-                                    <div class="input-field myinput">
-                                        <select>
-                                            <option value="" disabled selected>Select Column</option>
-                                            <option value="1">01</option>
-                                        </select>
-                                        <label>Column Name</label>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="input-field myinput">
-                                        <select>
-                                            <option value="" disabled selected>Select Group</option>
-                                            <option value="1">sifat39</option>
-                                        </select>
-                                        <label>Group Name</label>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <button class="btn mybutton mt-3 d-block waves-effect light-blue-text text-darken-2"
-                                        type="button">Import</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <!-- TAB CONTENT :- ADD CONTACT NUMBER END xxxxxxxxxxxxxxxxxx -->
-
-
-                <!-- TAB CONTENT :- MANAGE CONTACTS START ================ -->
-                <div id="manageContact" class="col tabbox">
+                <!-- TAB CONTENT :- Message Report START ================ -->
+                <div id="messageReport" class="col tabbox">
                     <div class="card">
                         <div class="card-header">
                             <form class="px-5">
@@ -450,7 +365,8 @@
 
                                                         <div class="modal-body">
                                                             <label for="editContactName">Name</label>
-                                                            <input type="text" class="form-control" id="editContactName" autocomplete="off">
+                                                            <input type="text" class="form-control" id="editContactName"
+                                                                autocomplete="off">
                                                             <label for="editName">Contact Number</label>
                                                             <input type="number" class="form-control" id="editName">
                                                         </div>
@@ -509,7 +425,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- TAB CONTENT :- MANAGE CONTACTS END xxxxxxxxxxxxxxxxxx -->
+                <!-- TAB CONTENT :- Message Report END xxxxxxxxxxxxxxxxxx -->
             </div>
             <!-- MANAGE GROUP END -->
 
