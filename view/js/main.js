@@ -122,4 +122,7 @@ $('#myTab li a[href="' + hash + '"]').tab('show');
 // ==================XXXXXXXXXXXXXXXXX==========================
 
 // INPUT DATE VALUE ALWAYS TODAY
-document.getElementById('dateForm').valueAsDate = new Date();
+document.getElementById('dateFrom').valueAsDate = new Date();
+document.getElementById('dateTo').valueAsDate = new Date();
+document.getElementById('MdateFrom').valueAsDate = new Date();
+document.getElementById('MdateTo').valueAsDate = new Date();

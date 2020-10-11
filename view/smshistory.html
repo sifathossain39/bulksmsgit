@@ -170,24 +170,24 @@
                 <div id="smsReport" class="col tabbox">
 
                     <!-- DATE SEARCH AND SHOW SMS REPORT -->
-                    <div class="card">
+                    <div class="card mt-4">
                         <div class="card-header">
                             <!-- INPUT DATE AND SEARCH -->
                             <form class="px-5">
-                                <div class="form-row">
-                                    <div class="col-md-6 col-xl-4">
-                                        <div class="form-group date row">
-                                            <input class="form-control input-contact myinput px-4" type="date" value=""
-                                                id="dateForm">
-                                        </div>
+                                <div class="form-row justify-content-center">
+                                    <div class="col-lg-4">
+                                        <label for="dateFrom" class=" m-0 p-0">Date From</label>
+                                        <input class="form-control input-contact w-75 myinput mt-2 px-4" type="date"
+                                            value="" id="dateFrom">
                                     </div>
-                                    <div class="col-md-6 col-xl-4">
-                                        <input type="text" class="myinput input-contact form-control pl-4"
-                                            id="searchnumber" placeholder="Enter Name or Number" autocomplete="off">
+                                    <div class="col-lg-4">
+                                        <label for="dateTo" class="d-block m-0 p-0">Date To</label>
+                                        <input class="form-control input-contact w-75 myinput mt-2 px-4" type="date"
+                                            value="" id="dateTo">
                                     </div>
-                                    <div class="col-md-6 col-xl-4">
+                                    <div class="col-lg-2">
                                         <button
-                                            class="btn mybutton btn-contact d-block waves-effect light-blue-text text-darken-2"
+                                            class="btn mybutton btn-contact dbnt d-block waves-effect light-blue-text text-darken-2"
                                             type="button">Search</button>
                                     </div>
                                 </div>
@@ -199,93 +199,24 @@
                                 <table class="table table-bordered table-condensed table-hover table-striped">
                                     <thead>
                                         <tr>
-                                            <th scope="col-2" class="text-center" style="width: 6%;">#</th>
-                                            <th scope="col-2" style="width: 40%;">Group Name</th>
-                                            <th scope="col-2" class="text-center" style="width: 27%;">Number of Contact
-                                            </th>
-                                            <th scope="col-2" class="text-center" style="width: 27%;">Action</th>
+                                            <th scope="col-2" style="width: 5%;">#</th>
+                                            <th scope="col-2" style="width: 20%;">Date/Time</th>
+                                            <th scope="col-2" style="width: 15%;">Total SMS</th>
+                                            <th scope="col-2" style="width: 15%;">Successful</th>
+                                            <th scope="col-2" style="width: 15%;">Failed</th>
+                                            <th scope="col-2" style="width: 15%;">Type</th>
+                                            <th scope="col-2" style="width: 15%;">Cost (BDT)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="text-center">1</td>
-                                            <td>Sifat Contact</td>
-                                            <td class="text-center">26</td>
-                                            <td class="text-center">
-                                                <a href="#modalEdit" data-toggle="modal"><i class="fas fa-edit"></i></a>
-                                                &nbsp;|&nbsp;
-                                                <a href="#modalDelete" data-toggle="modal"><i
-                                                        class="fas fa-trash-alt"></i></a>
-                                            </td>
-
-                                            <!-- ACTION EDIT -->
-                                            <div class="modal fade" id="modalEdit">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLabel">
-                                                                Edit Group Name
-                                                            </h5>
-                                                            <button type="button" class="close" data-dismiss="modal"
-                                                                aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                        </div>
-
-                                                        <div class="modal-body">
-                                                            <label for="editGroupName">Enter Group Name</label>
-                                                            <input type="text" class="form-control" id="editGroupName"
-                                                                autocomplete="off">
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button"
-                                                                class="btn waves-effect teal darken-1 text-light"
-                                                                data-dismiss="modal">
-                                                                Update
-                                                            </button>
-                                                            <button type="button"
-                                                                class="btn waves-effect grey darken-2 text-light"
-                                                                data-dismiss="modal">
-                                                                Close
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- ACTION EDIT -->
-                                            <div class="modal fade" id="modalDelete">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLabel">
-                                                                Delete Group
-                                                            </h5>
-                                                            <button type="button" class="close" data-dismiss="modal"
-                                                                aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                        </div>
-
-                                                        <div class="modal-body">
-                                                            <p class="text-center">Are you sure you want to delete this
-                                                                group?</p>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button"
-                                                                class="btn waves-effect teal darken-1 text-light"
-                                                                data-dismiss="modal">
-                                                                Yes
-                                                            </button>
-                                                            <button type="button"
-                                                                class="btn waves-effect grey darken-2 text-light"
-                                                                data-dismiss="modal">
-                                                                No
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <td>1</td>
+                                            <td>11 OCT, 2020 4:22 PM</td>
+                                            <td>5500</td>
+                                            <td>5500</td>
+                                            <td>0</td>
+                                            <td>Without Mask</td>
+                                            <td>825.00</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -298,126 +229,63 @@
 
                 <!-- TAB CONTENT :- Message Report START ================ -->
                 <div id="messageReport" class="col tabbox">
-                    <div class="card">
+
+                    <!-- DATE SEARCH AND SHOW MESSAGE REPORT -->
+                    <div class="card mt-4">
                         <div class="card-header">
+                            <!-- INPUT DATE AND SEARCH -->
                             <form class="px-5">
-                                <div class="form-row">
-                                    <div class="col-md-6 col-xl-4">
-                                        <div class="input-field myinput">
-                                            <select>
-                                                <option value="" disabled selected>Select Group</option>
-                                                <option value="1">01</option>
-                                            </select>
-                                        </div>
+                                <div class="form-row justify-content-center">
+                                    <div class="col-md-6 col-xl-3">
+                                        <label for="MdateFrom" class="d-block m-0 p-0">Date From</label>
+                                        <input class="form-control input-contact w-75 myinput mt-2 px-4" type="date"
+                                            value="" id="MdateFrom">
                                     </div>
-                                    <div class="col-md-6 col-xl-4">
-                                        <input type="text" class="myinput input-contact form-control pl-4"
-                                            id="searchnumber" placeholder="Enter Name or Number" autocomplete="off">
+                                    <div class="col-md-6 col-xl-3 ml-xl-3">
+                                        <label for="MdateTo" class="d-block m-0 p-0">Date To</label>
+                                        <input class="form-control input-contact w-75 myinput mt-2 px-4" type="date"
+                                            value="" id="MdateTo">
                                     </div>
-                                    <div class="col-md-6 col-xl-4">
+                                    <div class="col-md-6 col-xl-3">
+                                        <input class="form-control input-contact w-75 myinput binp px-4" type="text"
+                                            value="" id="MdateTo" placeholder="Enter Search Keyword">
+                                    </div>
+                                    <div class="col-md-6 col-xl-2">
                                         <button
-                                            class="btn mybutton btn-contact d-block waves-effect light-blue-text text-darken-2"
+                                            class="btn mybutton btn-contact dbnt d-block waves-effect light-blue-text text-darken-2"
                                             type="button">Search</button>
                                     </div>
                                 </div>
                             </form>
                         </div>
                         <div class="card-body">
+                            <!-- GROUP DETAILS TABLE -->
                             <div class="table-responsive table-wrap">
                                 <table class="table table-bordered table-condensed table-hover table-striped">
                                     <thead>
                                         <tr>
-                                            <th scope="col-2" class="text-center" style="width: 6%;">#</th>
-                                            <th scope="col-2" style="width: 30%;">Group</th>
-                                            <th scope="col-2" style="width: 30%;">Name</th>
-                                            <th scope="col-2" class="text-center" style="width: 19%;">Contact Number
-                                            </th>
-                                            <th scope="col-2" class="text-center" style="width: 15%;">Action</th>
+                                            <th scope="col-2" style="width: 5%;">#</th>
+                                            <th scope="col-2" style="width: 20%;">Date/Time</th>
+                                            <th scope="col-2" style="width: 10%;">Recipients</th>
+                                            <th scope="col-2" style="width: 30%;">Message</th>
+                                            <th scope="col-2" style="width: 5%;">Count</th>
+                                            <th scope="col-2" style="width: 10%;">Type</th>
+                                            <th scope="col-2" style="width: 10%;">Cost (BDT)</th>
+                                            <th scope="col-2" style="width: 10%;">Status</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="text-center">1</td>
-                                            <td>Sifat Contact</td>
-                                            <td>Oifat</td>
-                                            <td class="text-center">01718624208</td>
-                                            <td class="text-center">
-                                                <a href="#contactEdit" data-toggle="modal"><i
-                                                        class="fas fa-edit"></i></a>
-                                                &nbsp;|&nbsp;
-                                                <a href="#contactDelete" data-toggle="modal"><i
-                                                        class="fas fa-trash-alt"></i></a>
+                                            <td>1</td>
+                                            <td>11 OCT, 2020 4:22 PM</td>
+                                            <td>01718624208</td>
+                                            <td>Hello, I am from atmotech</td>
+                                            <td>25</td>
+                                            <td>Without Mask</td>
+                                            <td>0.15</td>
+                                            <td>
+                                                <div class="status">Success</div>
                                             </td>
-
-                                            <!-- Modal Structure [edit] -->
-                                            <div class="modal fade" id="contactEdit">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLabel">
-                                                                Edit Contact Number
-                                                            </h5>
-                                                            <button type="button" class="close" data-dismiss="modal"
-                                                                aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                        </div>
-
-                                                        <div class="modal-body">
-                                                            <label for="editContactName">Name</label>
-                                                            <input type="text" class="form-control" id="editContactName"
-                                                                autocomplete="off">
-                                                            <label for="editName">Contact Number</label>
-                                                            <input type="number" class="form-control" id="editName">
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button"
-                                                                class="btn waves-effect teal darken-1 text-light"
-                                                                data-dismiss="modal">
-                                                                Update
-                                                            </button>
-                                                            <button type="button"
-                                                                class="btn waves-effect grey darken-2 text-light"
-                                                                data-dismiss="modal">
-                                                                Close
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Modal Structure [delete] -->
-                                            <div class="modal fade" id="contactDelete">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLabel">
-                                                                Delete Contact
-                                                            </h5>
-                                                            <button type="button" class="close" data-dismiss="modal"
-                                                                aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                        </div>
-
-                                                        <div class="modal-body">
-                                                            <p class="text-center">Are you sure you want to delete this
-                                                                contact?</p>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button"
-                                                                class="btn waves-effect teal darken-1 text-light"
-                                                                data-dismiss="modal">
-                                                                Yes
-                                                            </button>
-                                                            <button type="button"
-                                                                class="btn waves-effect grey darken-2 text-light"
-                                                                data-dismiss="modal">
-                                                                No
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </tr>
                                     </tbody>
                                 </table>

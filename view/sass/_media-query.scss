@@ -193,5 +193,20 @@
             margin-left: 50px;
         }
     }
+    
+}
 
+// 992 px to max
+@media only screen and (min-width:992px){
+    #smsReport,
+    #messageReport{
+        .card{
+            .dbnt{
+                margin-top: 32px !important;
+            }
+            .binp{
+                margin-top: 30px !important;
+            }
+        }
+    }
 }

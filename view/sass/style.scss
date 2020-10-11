@@ -322,6 +322,7 @@ textarea {
                         width: initial;
                         border-top-right-radius: 0px;
                         border-bottom-right-radius: 0px;
+                        font-size: 14px;
                     }
 
                     .input-contact {
@@ -344,7 +345,6 @@ textarea {
                         border-radius: .25rem !important;
                         margin: 18px 0px 0px 32px;
                     }
-
                     // TABLE START ============
                     .table-wrap {
                         height: 650px;
@@ -364,6 +364,9 @@ textarea {
                             background: #c5cae9;
                             border: 1px solid rgb(222, 226, 230);
                         }
+                        th,td{
+                            text-align: center;
+                        }
 
                         tbody th:nth-child(1),
                         tbody tr:nth-child(1) td {
@@ -376,6 +379,16 @@ textarea {
 
                         i.fa-trash-alt {
                             color: #ef5350;
+                        }
+
+                        .status{
+                            text-transform: capitalize;
+                            background: #5CB85C;
+                            color: #ffffff;
+                            border: none;
+                            border-radius: 5px;
+                            padding: 5px;
+                            margin-top: 6.25px;
                         }
                     }
 
