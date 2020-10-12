@@ -382,13 +382,14 @@ textarea {
                             position: sticky;
                             top: -1px;
                             border: none;
-                            background: #c5cae9;
-                            border: 1px solid rgb(222, 226, 230);
+                            background: #84b4cc;
                         }
 
                         th,
                         td {
                             text-align: center;
+                            border: 1px solid #f1d9d9 !important;
+                            font-size: 14px;
                         }
 
                         tbody th:nth-child(1),
@@ -404,14 +405,19 @@ textarea {
                             color: #ef5350;
                         }
 
-                        .status {
+                        .success,.failed {
                             text-transform: capitalize;
-                            background: #5CB85C;
                             color: #ffffff;
                             border: none;
                             border-radius: 5px;
                             padding: 5px;
                             margin-top: 6.25px;
+                        }
+                        .success{
+                            background: #5CB85C;
+                        }
+                        .failed{
+                            background: #df2626;
                         }
                     }
 
