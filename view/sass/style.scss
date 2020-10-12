@@ -3,6 +3,23 @@
     font-family: oswald;
 }
 
+// Variables START =========================== 
+
+$bg-color:#b8bdd5;
+
+$shadow_1: inset 5px 5px 10px #9ca1b5, 
+inset -5px -5px 10px #d4d9f5;
+
+$shadow_input:inset 5px 5px 10px #969ab1, 
+inset -5px -5px 10px #f4faff;
+
+$shadow_2: 5px 5px 10px #9ca1b5, 
+-5px -5px 10px #d4d9f5;
+
+$linera-grad: linear-gradient(145deg, #c5cae4, #a6aac0);
+
+// Variables END =======xxxxxxxxxxxx========== 
+
 // GLOBAL START ===========================
 * {
     margin: 0;
@@ -11,7 +28,7 @@
 }
 
 body {
-    background: #c5cae9;
+    background: $bg-color;
 
 }
 
@@ -88,16 +105,16 @@ textarea {
 
         .content-box {
             border-radius: 20px;
-            background: #c5cae9;
-            box-shadow: inset 5px 5px 10px #a7acc6, inset -5px -5px 10px #e3e8ff;
+            background: $bg-color;
+            box-shadow: $shadow_1;
 
             // DASHBOARD CONTENT
             .box {
                 width: 150px;
                 height: 125px;
                 border-radius: 30px;
-                background: linear-gradient(145deg, #d3d8f9, #b1b6d2);
-                box-shadow: 5px 5px 10px #a7acc6, -5px -5px 10px #e3e8ff;
+                background: $linera-grad;
+                box-shadow: $shadow_2;
 
 
                 a {
@@ -128,9 +145,9 @@ textarea {
                     border: none;
                     outline: none;
                     border-radius: 15px;
-                    background: #c5cae9;
+                    background: $bg-color;
                     color: #000000;
-                    box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff;
+                    box-shadow: $shadow_input;
                 }
 
                 input {
@@ -139,7 +156,7 @@ textarea {
 
                 input:focus,
                 textarea:focus {
-                    box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff !important;
+                    box-shadow: $shadow_input !important;
                 }
 
                 // CUSTOMIZE INPUT/TEXT BOX END ===================
@@ -176,7 +193,7 @@ textarea {
 
                     span::before {
                         border: none;
-                        box-shadow: inset 5px 5px 10px #8e91a8, inset -5px -5px 10px #fcffff;
+                        box-shadow: $shadow_1;
                     }
 
                     span::before,
@@ -193,23 +210,26 @@ textarea {
 
         // STYLE MANAGE GROUP SECTION START ================
 
-        #manageGroup,#smsHistory {
+        #manageGroup,
+        #smsHistory {
 
             // TAB HEADER START
             .tabs {
 
                 border-top-right-radius: 10px;
                 border-top-left-radius: 10px;
-                background: #c5cae9;
-                box-shadow: 5px 5px 10px #969ab1, -5px -5px 10px #f4faff;
+                background: $bg-color;
+                box-shadow: $shadow_2;
 
                 a {
                     text-decoration: none;
-                    color: #f4511e  ;
+                    color: #f4511e;
                     font-weight: bold;
                 }
 
-                a:hover,a:focus,a:active {
+                a:hover,
+                a:focus,
+                a:active {
                     color: #ff7043;
                 }
 
@@ -229,7 +249,7 @@ textarea {
             .tabbox {
                 border-bottom-right-radius: 10px;
                 border-bottom-left-radius: 10px;
-                box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff;
+                box-shadow: $shadow_1;
             }
 
             // TAB CONTENT SECTION START =============
@@ -246,9 +266,9 @@ textarea {
                     border: none;
                     outline: none;
                     border-radius: 15px;
-                    background: #c5cae9;
+                    background: $bg-color;
                     color: #000000;
-                    box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff;
+                    box-shadow: $shadow_input;
 
                     .select-wrapper input.select-dropdown {
                         margin-bottom: 0;
@@ -264,7 +284,7 @@ textarea {
                 }
 
                 .myinput:focus {
-                    box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff !important;
+                    box-shadow: $shadow_input !important;
                 }
 
                 .select-wrapper+label {
@@ -307,7 +327,7 @@ textarea {
 
                 .mybutton:active {
 
-                    box-shadow: inset 5px 5px 10px #969ab1, inset -5px -5px 10px #f4faff !important;
+                    box-shadow: $shadow_1 !important;
                 }
 
                 // STYLING BUTTONS IN ADD GROUP START XXXXXXX
@@ -315,7 +335,7 @@ textarea {
 
                 // SEARCH GROUP AND TABLE START =======
                 .card {
-                    background: #c5cae9;
+                    background: $bg-color;
 
                     // SEARCH BOX
                     input {
@@ -345,6 +365,7 @@ textarea {
                         border-radius: .25rem !important;
                         margin: 18px 0px 0px 32px;
                     }
+
                     // TABLE START ============
                     .table-wrap {
                         height: 650px;
@@ -364,7 +385,9 @@ textarea {
                             background: #c5cae9;
                             border: 1px solid rgb(222, 226, 230);
                         }
-                        th,td{
+
+                        th,
+                        td {
                             text-align: center;
                         }
 
@@ -381,7 +404,7 @@ textarea {
                             color: #ef5350;
                         }
 
-                        .status{
+                        .status {
                             text-transform: capitalize;
                             background: #5CB85C;
                             color: #ffffff;
