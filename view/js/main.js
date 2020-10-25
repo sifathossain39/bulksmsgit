@@ -1,11 +1,22 @@
 // SIDEBAR COLLAPSE
 $(document).ready(function () {
+  
+  // let flag = localStorage.getItem('flag');
+  // if(flag && flag!==null){
+  //   $(".navbar").toggleClass("active");
+  //   $(".main_container").toggleClass("active");
+  // }
 
-
-    $(".sidetoggle").click(function () {
-        $(".navbar").toggleClass("active")
-        $(".main_container").toggleClass("active")
-    });
+  $(".sidetoggle").click(function () {
+    // if(flag===null || flag){
+    //   localStorage.setItem("flag",false);
+    // }
+    // else if(!flag){
+    //   localStorage.setItem("flag",true);
+    // }
+    $(".navbar").toggleClass("active")
+    $(".main_container").toggleClass("active")
+  });
 
 })
 

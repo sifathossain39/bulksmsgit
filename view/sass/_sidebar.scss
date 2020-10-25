@@ -49,20 +49,19 @@
                     display: inline-block;
                 }
 
-                &:hover,
-                &:active {
+                &:hover{
                     transition: all 0s ease;
                     background: #05305a;
                     box-shadow: inset 5px 5px 10px #021324, inset -5px -5px 10px #084d90;
                     .icon,.title{
-                        color: #ff5252;
+                        color: #ffca28;
                         font-weight: bold;
                     }
                 }
             }
 
             // ACTIVE SIDEBAR ITEM
-            .active-bar {
+            .active-bar, .active-bar:hover {
                 box-shadow: inset 5px 5px 10px #021324, inset -5px -5px 10px #084d90;
                 .icon,.title{
                     color: #ff5252;

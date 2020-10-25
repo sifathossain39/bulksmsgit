@@ -102,7 +102,6 @@ textarea {
         transition: all 0.3s ease;
 
         // square content with shadow effect box
-
         .content-box {
             border-radius: 20px;
             background: $bg-color;
@@ -134,11 +133,9 @@ textarea {
             }
 
             // SEND SMS, BULK SMS CONTENT
-
             #sendSms,
             #bulkSms,
             #groupSms {
-
                 // CUSTOMIZE INPUT/TEXT BOX START =================
                 input,
                 textarea {
@@ -207,7 +204,6 @@ textarea {
             }
         }
 
-
         // STYLE MANAGE GROUP SECTION START ================
 
         #manageGroup,
@@ -253,7 +249,6 @@ textarea {
             }
 
             // TAB CONTENT SECTION START =============
-
             #addGroup,
             #groupNumber,
             #manageContact,
@@ -301,7 +296,6 @@ textarea {
                 .searchbox {
                     width: initial !important;
                 }
-
                 // CUSTOMIZE INPUT/TEXT BOX END xxxxxxxxxxx
 
                 // CHANGE FONT AND COLOR
@@ -329,7 +323,6 @@ textarea {
 
                     box-shadow: $shadow_1 !important;
                 }
-
                 // STYLING BUTTONS IN ADD GROUP START XXXXXXX
 
 
