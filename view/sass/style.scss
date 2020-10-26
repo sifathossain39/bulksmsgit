@@ -7,13 +7,13 @@
 
 $bg-color:#b8bdd5;
 
-$shadow_1: inset 5px 5px 10px #9ca1b5, 
+$shadow_inner: inset 5px 5px 10px #9ca1b5,
 inset -5px -5px 10px #d4d9f5;
 
-$shadow_input:inset 5px 5px 10px #969ab1, 
+$shadow_input:inset 5px 5px 10px #969ab1,
 inset -5px -5px 10px #f4faff;
 
-$shadow_2: 5px 5px 10px #9ca1b5, 
+$shadow_outer: 5px 5px 10px #9ca1b5,
 -5px -5px 10px #d4d9f5;
 
 $linera-grad: linear-gradient(145deg, #c5cae4, #a6aac0);
@@ -29,6 +29,7 @@ $linera-grad: linear-gradient(145deg, #c5cae4, #a6aac0);
 
 body {
     background: $bg-color;
+    overflow-y: hidden;
 
 }
 
@@ -105,7 +106,7 @@ textarea {
         .content-box {
             border-radius: 20px;
             background: $bg-color;
-            box-shadow: $shadow_1;
+            box-shadow: $shadow_inner;
 
             // DASHBOARD CONTENT
             .box {
@@ -113,7 +114,7 @@ textarea {
                 height: 125px;
                 border-radius: 30px;
                 background: $linera-grad;
-                box-shadow: $shadow_2;
+                box-shadow: $shadow_outer;
 
 
                 a {
@@ -135,7 +136,9 @@ textarea {
             // SEND SMS, BULK SMS CONTENT
             #sendSms,
             #bulkSms,
-            #groupSms {
+            #groupSms,
+            .change-pass {
+
                 // CUSTOMIZE INPUT/TEXT BOX START =================
                 input,
                 textarea {
@@ -190,7 +193,7 @@ textarea {
 
                     span::before {
                         border: none;
-                        box-shadow: $shadow_1;
+                        box-shadow: $shadow_inner;
                     }
 
                     span::before,
@@ -202,10 +205,59 @@ textarea {
                 }
 
             }
+
+            // ACCOUNT INFORMATION SECTION START ==================
+
+            .info-card {
+
+                background: $bg-color;
+
+                .card-header {
+                    background-color: #e75757;
+
+                    p {
+                        margin: 0;
+                        font-size: 20px;
+                        color: #ffffff;
+                    }
+                }
+
+                #editInfo {
+
+                    label{
+                        color: #000000;
+                    }
+
+                    // CUSTOMIZE INPUT/TEXT BOX START =================
+                    input{
+                        border: none;
+                        outline: none;
+                        border-radius: 15px;
+                        background: $bg-color;
+                        color: #000000;
+                        box-shadow: $shadow_input;
+                        padding: 0 10px;
+                    }
+                    input:focus{
+                        box-shadow: $shadow_input !important;
+                    }
+                    // CUSTOMIZE INPUT/TEXT BOX END ===================
+
+                    .btn{
+                        background-color: #e07175;
+                    }
+                    .btn:hover{
+                        background-color: #e75757;
+                    }
+                }
+            }
+
+            // ACCOUNT INFORMATION SECTION END ==================
+
         }
 
-        // STYLE MANAGE GROUP SECTION START ================
 
+        // STYLE MANAGE GROUP SECTION START ================
         #manageGroup,
         #smsHistory {
 
@@ -215,7 +267,7 @@ textarea {
                 border-top-right-radius: 10px;
                 border-top-left-radius: 10px;
                 background: $bg-color;
-                box-shadow: $shadow_2;
+                box-shadow: $shadow_outer;
 
                 a {
                     text-decoration: none;
@@ -245,7 +297,7 @@ textarea {
             .tabbox {
                 border-bottom-right-radius: 10px;
                 border-bottom-left-radius: 10px;
-                box-shadow: $shadow_1;
+                box-shadow: $shadow_inner;
             }
 
             // TAB CONTENT SECTION START =============
@@ -296,6 +348,7 @@ textarea {
                 .searchbox {
                     width: initial !important;
                 }
+
                 // CUSTOMIZE INPUT/TEXT BOX END xxxxxxxxxxx
 
                 // CHANGE FONT AND COLOR
@@ -321,8 +374,9 @@ textarea {
 
                 .mybutton:active {
 
-                    box-shadow: $shadow_1 !important;
+                    box-shadow: $shadow_inner !important;
                 }
+
                 // STYLING BUTTONS IN ADD GROUP START XXXXXXX
 
 
@@ -398,7 +452,8 @@ textarea {
                             color: #ef5350;
                         }
 
-                        .success,.failed {
+                        .success,
+                        .failed {
                             text-transform: capitalize;
                             color: #ffffff;
                             border: none;
@@ -406,10 +461,12 @@ textarea {
                             padding: 5px;
                             margin-top: 6.25px;
                         }
-                        .success{
+
+                        .success {
                             background: #5CB85C;
                         }
-                        .failed{
+
+                        .failed {
                             background: #df2626;
                         }
                     }
