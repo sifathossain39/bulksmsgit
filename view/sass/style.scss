@@ -29,7 +29,7 @@ $linera-grad: linear-gradient(145deg, #c5cae4, #a6aac0);
 
 body {
     background: $bg-color;
-    overflow-y: hidden;
+    overflow-x: hidden;
 
 }
 
@@ -222,14 +222,15 @@ textarea {
                     }
                 }
 
+                // FORM CLASS editInfo
                 #editInfo {
 
-                    label{
+                    label {
                         color: #000000;
                     }
 
                     // CUSTOMIZE INPUT/TEXT BOX START =================
-                    input{
+                    input {
                         border: none;
                         outline: none;
                         border-radius: 15px;
@@ -238,15 +239,18 @@ textarea {
                         box-shadow: $shadow_input;
                         padding: 0 10px;
                     }
-                    input:focus{
+
+                    input:focus {
                         box-shadow: $shadow_input !important;
                     }
+
                     // CUSTOMIZE INPUT/TEXT BOX END ===================
 
-                    .btn{
+                    .btn {
                         background-color: #e07175;
                     }
-                    .btn:hover{
+
+                    .btn:hover {
                         background-color: #e75757;
                     }
                 }
