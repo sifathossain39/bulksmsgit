@@ -18,8 +18,22 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+p{
+    margin: 0;
+}
 
-.login-form {
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.login-form,.recovery-form{
     width: 300px;
     height: 500px;
     border-radius: 40px;
@@ -56,6 +70,23 @@ body {
         font-size: 12px;
         font-weight: bold;
         text-align: center;
+    }
+
+    .recover-status{
+        text-align: center;
+        .warning{
+            color: red;
+        }
+        .success{
+            color: green;
+        }
+        p{
+            font-size: 14px;
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+        }
     }
 
     .submit-field {
@@ -114,17 +145,21 @@ body {
 
 }
 
+.recovery-form{
+    height: 540px;
+}
+
 
 // 0px to 575px 
 @media screen and (max-width: 575px) and (min-width: 0px) {
 
-    .login-form {
+    .login-form,.recovery-form {
         width: 100%;
         height: 100vh;
         border-radius: 0px;
 
         .logo {
-            margin: 16% auto 10px;
+            margin: 10% auto 10px;
         }
 
         .title {
@@ -162,7 +197,6 @@ body {
 
         .forgot-pass {
             margin-top: 16px;
-
             a {
                 font-size: 14px;
             }
@@ -173,7 +207,7 @@ body {
 // 1500px to max 
 @media screen and (min-width: 1500px) {
 
-    .login-form {
+    .login-form,.recovery-form {
         width: 400px;
         height: 580px;
     
