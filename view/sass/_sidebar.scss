@@ -7,6 +7,7 @@
         left: 0;
         width: 225px;
         height: 100%;
+        font-family: 'poppins';
         background: #05305a;
         transition: all 0.3s ease;
         z-index: 9999;
@@ -16,6 +17,7 @@
 
             // BULK SMS SERVICE
             .header-title {
+                font-family: 'poppins' , sans-serif;
                 font-size: 20px;
                 color: #ffffff;
                 text-align: center;
