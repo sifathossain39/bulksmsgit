@@ -221,6 +221,19 @@ textarea {
                     }
                 }
 
+                // change material to bootstrap
+                .select-wrapper{
+                    input{
+                        display: none;
+                    }
+                    ul{
+                        display: none;
+                    }
+                    svg{
+                        display: none;
+                    }
+                }
+
             }
 
             // ACCOUNT INFORMATION SECTION START ==================
