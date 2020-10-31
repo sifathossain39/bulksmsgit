@@ -154,7 +154,8 @@ textarea {
 
                 // CUSTOMIZE INPUT/TEXT BOX START =================
                 input,
-                textarea {
+                textarea,
+                select {
                     border: none;
                     outline: none;
                     border-radius: 15px;
@@ -172,8 +173,17 @@ textarea {
                 }
 
                 input:focus,
-                textarea:focus {
+                textarea:focus,
+                select:focus {
                     box-shadow: $shadow_input !important;
+                }
+
+                select {
+                    -moz-appearance: none;
+                    /* Firefox */
+                    -webkit-appearance: none;
+                    /* Safari and Chrome */
+                    appearance: none;
                 }
 
                 // CUSTOMIZE INPUT/TEXT BOX END ===================
@@ -222,14 +232,16 @@ textarea {
                 }
 
                 // change material to bootstrap
-                .select-wrapper{
-                    input{
+                .select-wrapper {
+                    input {
                         display: none;
                     }
-                    ul{
+
+                    ul {
                         display: none;
                     }
-                    svg{
+
+                    svg {
                         display: none;
                     }
                 }
@@ -247,7 +259,7 @@ textarea {
 
                     p {
                         margin: 0;
-                        font-family: $font-poppins-medium ,sans-serif;
+                        font-family: $font-poppins-medium, sans-serif;
                         font-size: 20px;
                         color: #ffffff;
                     }
@@ -319,7 +331,7 @@ textarea {
                 background: $bg-color;
 
                 .card-header {
-                    font-family: $font-poppins-medium,sans-serif;
+                    font-family: $font-poppins-medium, sans-serif;
                     background: #212121;
                     color: #ffffff;
                 }
