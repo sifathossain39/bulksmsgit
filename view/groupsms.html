@@ -49,11 +49,15 @@
 
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Balance: 100000 SMS</a>
-                            <a class="dropdown-item" href="accountinfo.html"><i class="fas fa-info-circle mr-2"></i>Account Info</a>
-                            <a class="dropdown-item" href="updatepro.html"><i class="fas fa-cog mr-2"></i>Update Profile</a>
-                            <a class="dropdown-item" href="changepass.html"><i class="fas fa-key mr-2"></i>Change Password</a>
+                            <a class="dropdown-item" href="accountinfo.html"><i
+                                    class="fas fa-info-circle mr-2"></i>Account Info</a>
+                            <a class="dropdown-item" href="updatepro.html"><i class="fas fa-cog mr-2"></i>Update
+                                Profile</a>
+                            <a class="dropdown-item" href="changepass.html"><i class="fas fa-key mr-2"></i>Change
+                                Password</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="login.html"><i class="fas fa-sign-out-alt mr-2"></i>Logout</a>
+                            <a class="dropdown-item" href="login.html"><i
+                                    class="fas fa-sign-out-alt mr-2"></i>Logout</a>
                         </div>
                     </div>
                 </ul>
@@ -155,7 +159,7 @@
             </div>
         </div>
         <!-- SIDEBAR END -->
-        
+
         <div class="container-fluid content-page">
             <!-- GROUP SMS CONTENT START content-box-shadow -->
             <div class="content-box p-0 p-sm-4">
@@ -164,13 +168,11 @@
                         <!-- SELECT GROUP -->
                         <div class="form-row justify-content-center mt-5 mb-3 mx-5 mx-xl-0">
                             <div class="col-12 col-xl-8">
-                                <div class="input-field">
-                                    <select>
-                                        <option value="" disabled selected>Select Group</option>
-                                        <option value="1">Sifat</option>
-                                    </select>
-                                    <label>Group Name</label>
-                                </div>
+                                <label>Group Name</label>
+                                <select class="form-control" id="groupName">
+                                    <option>Select Group</option>
+                                    <option>10 g</option>
+                                </select>
                             </div>
                         </div>
 
@@ -178,11 +180,13 @@
                         <div class="form-row justify-content-center my-3 mx-5 mx-xl-0">
                             <div class="col-5 col-lg-4 col-xl-3">
                                 <label class="mb-2 m-0 p-0 mr-2 d-block d-xl-inline" for="to">Start Range</label>
-                                <input type="number" class="w-50 w-xl-25 p-0 px-3" value="" id="to" autocomplete="off"/>
+                                <input type="number" class="w-50 w-xl-25 p-0 px-3" value="" id="to"
+                                    autocomplete="off" />
                             </div>
                             <div class="col-5 col-lg-4 col-xl-3">
                                 <label class="mb-2 m-0 p-0 mr-2 d-block d-xl-inline" for="to">End Range</label>
-                                <input type="number" class="w-50 w-xl-25 p-0 px-3" value="" id="to" autocomplete="off" />
+                                <input type="number" class="w-50 w-xl-25 p-0 px-3" value="" id="to"
+                                    autocomplete="off" />
                             </div>
                             <div class="col-2 col-lg-4 col-xl-2 check">
                                 <p>
@@ -261,7 +265,8 @@
                                         </table>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn waves-effect grey darken-2 text-light" data-dismiss="modal">
+                                        <button type="button" class="btn waves-effect grey darken-2 text-light"
+                                            data-dismiss="modal">
                                             Close
                                         </button>
                                     </div>
