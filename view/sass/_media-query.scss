@@ -92,6 +92,16 @@
     }
 }
 
+// 0px to 991px
+@media screen and (max-width: 991px) and (min-width: 0px) {
+
+    .transaction{
+        .mybutton{
+            margin-top: 10px !important;
+        }
+    }
+}
+
 // 0px to 1199px 
 @media screen and (max-width: 1199px) and (min-width: 0px){
     #groupSms{

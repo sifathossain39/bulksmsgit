@@ -49,7 +49,8 @@
 
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Balance: 100000 SMS</a>
-                            <a class="dropdown-item" href="accountinfo.html"><i class="fas fa-info-circle mr-2"></i>Account Info</a>
+                            <a class="dropdown-item" href="accountinfo.html"><i
+                                    class="fas fa-info-circle mr-2"></i>Account Info</a>
                             <a class="dropdown-item" href="updatepro.html"><i class="fas fa-cog mr-2"></i>Update
                                 Profile</a>
                             <a class="dropdown-item" href="changepass.html"><i class="fas fa-key mr-2"></i>Change
@@ -102,7 +103,7 @@
     <!-- MAIN CONTENT -->
     <div class="main_container">
         <!-- SIDEBAR START  -->
-        <div class="sidebar"> 
+        <div class="sidebar">
             <div class="sidebar_inner">
                 <i class="header-icon mb-3 mt-4 fas fa-paper-plane"></i>
                 <div class="header-title my-3">Bulk SMS Service</div>
@@ -169,34 +170,110 @@
         <div class="container-fluid content-page">
             <!-- ACCOUNT INFO START -->
             <div class="content-box p-0 p-sm-4">
+
                 <!-- ACCOUNT BALANCE INFORMATON START -->
                 <div class="row justify-content-center m-0">
-                    <div class="col-4 p-0 p-sm-3">
+                    <div class="col-sm-6 col-lg-4 p-0 p-sm-3">
                         <div class="card balance-card balance">
                             <div class="card-body">
-                                <div><h3>Balance</h3></div>
-                                <div><h4>1000000 SMS</h4></div>
+                                <div>
+                                    <h3>Balance</h3>
+                                </div>
+                                <div>
+                                    <h4>1000000 SMS</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 p-0 p-sm-3">
+                    <div class="col-sm-6 col-lg-4 p-0 p-sm-3">
                         <div class="card balance-card start">
                             <div class="card-body">
-                                <div><h3>Start Date</h3></div>
-                                <div><h4>10/30/2020</h4></div>
+                                <div>
+                                    <h3>Start Date</h3>
+                                </div>
+                                <div>
+                                    <h4>10/30/2020</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 p-0 p-sm-3">
+                    <div class="col-sm-6 col-lg-4 p-0 p-sm-3">
                         <div class="card balance-card end">
                             <div class="card-body">
-                                <div><h3>End Date</h3></div>
-                                <div><h4>11/28/2020</h4></div>
+                                <div>
+                                    <h3>End Date</h3>
+                                </div>
+                                <div>
+                                    <h4>11/28/2020</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- ACCOUNT BALANCE INFORMATON END -->
+
+                <!-- TRANSACTION HISTORY START -->
+                <div class="row justify-content-center m-0">
+                    <div class="col-12 p-0 p-sm-3">
+                        <div class="card transaction">
+                            <div class="card-header">
+                                <h5>Transaction History</h5>
+                            </div>
+                            <div class="card-body">
+                                <!-- DATE FILTER START -->
+                                <form class="px-5">
+                                    <div class="form-row justify-content-center">
+                                        <div class="col-lg-4">
+                                            <label for="dateFrom" class="m-0 p-0">Date From</label>
+                                            <input class="form-control input-contact w-75 myinput mt-2 px-4" type="date"
+                                                value="" id="dateFrom">
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <label for="dateTo" class="d-block m-0 p-0">Date To</label>
+                                            <input class="form-control input-contact w-75 myinput mt-2 px-4" type="date"
+                                                value="" id="dateTo">
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <button
+                                                class="btn mybutton btn-contact dbnt d-block waves-effect light-blue-text text-darken-2"
+                                                type="button">Go</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <hr>
+                                <!-- DATE FILTER END -->
+                                <!-- TRANSACTION HISTORY TABLE START -->
+                                <div class="table-responsive table-wrap">
+                                    <table class="table table-bordered table-condensed table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col-2" style="width: 5%;">#</th>
+                                                <th scope="col-2" style="width: 20%;">Date</th>
+                                                <th scope="col-2" style="width: 25%;">Package Name</th>
+                                                <th scope="col-2" style="width: 20%;">Number of SMS</th>
+                                                <th scope="col-2" style="width: 15%;">Amount (BDT)</th>
+                                                <th scope="col-2" style="width: 15%;">Remarks</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>11 OCT, 2020</td>
+                                                <td>5500</td>
+                                                <td>5500</td>
+                                                <td>0</td>
+                                                <td>Without Mask</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- TRANSACTION HISTORY TABLE START -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TRANSACTION HISTORY START -->
+
             </div>
             <!-- ACCOUNT INFO END -->
         </div>
