@@ -31,9 +31,9 @@
                     width: 100%;
                     border-radius: 0px;
                     box-shadow: none;
-                    
+                    background: #ff5252;
                     a {
-                        color: #ff5252;
+                        color: #ffffff;
 
                         span {
                             margin-top: 30px !important;
@@ -43,12 +43,6 @@
                         &:active {
                             color: #ffffff;
                         }
-                    }
-
-                    &:hover,
-                    &:active {
-                        background: #ff5252;
-                        color: #ffffff;
                     }
                 }
             }
