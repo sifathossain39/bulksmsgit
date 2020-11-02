@@ -414,231 +414,226 @@ textarea {
 
         }
 
+        // TAB START
+        // TAB HEADER START
+        .tabs {
 
-        // STYLE MANAGE GROUP SECTION START ================
-        #manageGroup,
-        #smsHistory {
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            background: $bg-color;
+            box-shadow: $shadow_outer;
 
-            // TAB HEADER START
-            .tabs {
+            a {
+                text-decoration: none;
+                color: #f4511e;
+                font-weight: bold;
+            }
 
-                border-top-right-radius: 10px;
-                border-top-left-radius: 10px;
+            a:hover,
+            a:focus,
+            a:active {
+                color: #ff7043;
+            }
+
+            a:focus.active {
+                background-color: #ffccbc;
+            }
+
+            .indicator {
+                background-color: #f4511e;
+            }
+
+        }
+
+        // TAB HEADER END
+
+        // TAB ITEMS AREA
+        .tabbox {
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            box-shadow: $shadow_inner;
+        }
+
+        // TAB END
+
+        // TAB CONTENT SECTION START =============
+        #addGroup,
+        #groupNumber,
+        #manageContact,
+        #smsReport,
+        #messageReport {
+
+            // CUSTOMIZE INPUT/TEXT BOX START ---------------------
+            .myinput {
+                width: 100%;
+                border: none;
+                outline: none;
+                border-radius: 15px;
                 background: $bg-color;
-                box-shadow: $shadow_outer;
+                color: #000000;
+                box-shadow: $shadow_input;
 
-                a {
-                    text-decoration: none;
-                    color: #f4511e;
-                    font-weight: bold;
+                .select-wrapper input.select-dropdown {
+                    margin-bottom: 0;
                 }
-
-                a:hover,
-                a:focus,
-                a:active {
-                    color: #ff7043;
-                }
-
-                a:focus.active {
-                    background-color: #ffccbc;
-                }
-
-                .indicator {
-                    background-color: #f4511e;
-                }
-
             }
 
-            // TAB HEADER END
-
-            // TAB ITEMS AREA
-            .tabbox {
-                border-bottom-right-radius: 10px;
-                border-bottom-left-radius: 10px;
-                box-shadow: $shadow_inner;
+            .input-field {
+                input {
+                    padding-left: 10px;
+                    width: 100% !important;
+                    border: none !important;
+                }
             }
 
-            // TAB CONTENT SECTION START =============
-            #addGroup,
-            #groupNumber,
-            #manageContact,
-            #smsReport,
-            #messageReport {
+            .myinput:focus {
+                box-shadow: $shadow_input !important;
+            }
 
-                // CUSTOMIZE INPUT/TEXT BOX START ---------------------
-                .myinput {
+            .select-wrapper+label {
+                margin-top: -18px;
+            }
+
+            // INPUT [type file] 
+            .file-field {
+                .btn {
+                    line-height: 2.5rem;
+                }
+            }
+
+            .searchbox {
+                width: initial !important;
+            }
+
+            // CUSTOMIZE INPUT/TEXT BOX END xxxxxxxxxxx
+
+            // CHANGE FONT AND COLOR
+            p,
+            span,
+            label {
+                font-size: 16px;
+                color: #303030;
+            }
+
+            // STYLING BUTTONS IN ADD GROUP START =========
+            .mybutton {
+                text-transform: capitalize;
+                font-weight: bold;
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+            }
+
+            .mybutton:hover,
+            .mybutton:focus,
+            .mybutton:active {
+                background: transparent;
+            }
+
+            .mybutton:active {
+
+                box-shadow: $shadow_inner !important;
+            }
+
+            // STYLING BUTTONS IN ADD GROUP START XXXXXXX
+
+
+            // SEARCH GROUP AND TABLE START =======
+            .card {
+                background: $bg-color;
+
+                // SEARCH BOX
+                input {
+                    width: initial;
+                    border-top-right-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                    font-size: 14px;
+                }
+
+                .input-contact {
                     width: 100%;
-                    border: none;
-                    outline: none;
-                    border-radius: 15px;
-                    background: $bg-color;
-                    color: #000000;
-                    box-shadow: $shadow_input;
-
-                    .select-wrapper input.select-dropdown {
-                        margin-bottom: 0;
-                    }
+                    border-top-right-radius: 15px !important;
+                    border-bottom-right-radius: 15px !important;
+                    margin-top: 15px;
                 }
 
-                .input-field {
-                    input {
-                        padding-left: 10px;
-                        width: 100% !important;
-                        border: none !important;
-                    }
-                }
-
-                .myinput:focus {
-                    box-shadow: $shadow_input !important;
-                }
-
-                .select-wrapper+label {
-                    margin-top: -18px;
-                }
-
-                // INPUT [type file] 
-                .file-field {
-                    .btn {
-                        line-height: 2.5rem;
-                    }
-                }
-
-                .searchbox {
-                    width: initial !important;
-                }
-
-                // CUSTOMIZE INPUT/TEXT BOX END xxxxxxxxxxx
-
-                // CHANGE FONT AND COLOR
-                p,
-                span,
-                label {
-                    font-size: 16px;
-                    color: #303030;
-                }
-
-                // STYLING BUTTONS IN ADD GROUP START =========
+                // SEARCH BUTTON
                 .mybutton {
-                    text-transform: capitalize;
-                    font-weight: bold;
-                    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+                    border: none;
+                    height: 45px;
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
                 }
 
-                .mybutton:hover,
-                .mybutton:focus,
-                .mybutton:active {
-                    background: transparent;
+                .btn-contact {
+                    height: 36px !important;
+                    border-radius: .25rem !important;
+                    margin: 18px 0px 0px 32px;
                 }
 
-                .mybutton:active {
-
-                    box-shadow: $shadow_inner !important;
+                // TABLE START ============
+                .table-wrap {
+                    height: 650px;
+                    display: block;
+                    overflow-y: auto;
+                    border-top: 1px solid rgb(222, 226, 230);
                 }
 
-                // STYLING BUTTONS IN ADD GROUP START XXXXXXX
+                table {
+                    position: relative;
+                    border-collapse: collapse;
 
+                    thead th {
+                        position: sticky;
+                        top: -1px;
+                        border: none;
+                        background: #84b4cc;
+                    }
 
-                // SEARCH GROUP AND TABLE START =======
-                .card {
-                    background: $bg-color;
-
-                    // SEARCH BOX
-                    input {
-                        width: initial;
-                        border-top-right-radius: 0px;
-                        border-bottom-right-radius: 0px;
+                    th,
+                    td {
+                        text-align: center;
+                        border: 1px solid #f1d9d9 !important;
                         font-size: 14px;
                     }
 
-                    .input-contact {
-                        width: 100%;
-                        border-top-right-radius: 15px !important;
-                        border-bottom-right-radius: 15px !important;
-                        margin-top: 15px;
+                    tbody th:nth-child(1),
+                    tbody tr:nth-child(1) td {
+                        border-top: none;
                     }
 
-                    // SEARCH BUTTON
-                    .mybutton {
+                    i.fa-edit {
+                        color: #0d47a1;
+                    }
+
+                    i.fa-trash-alt {
+                        color: #ef5350;
+                    }
+
+                    .success,
+                    .failed {
+                        text-transform: capitalize;
+                        color: #ffffff;
                         border: none;
-                        height: 45px;
-                        border-top-right-radius: 15px;
-                        border-bottom-right-radius: 15px;
+                        border-radius: 5px;
+                        padding: 5px;
+                        margin-top: 6.25px;
                     }
 
-                    .btn-contact {
-                        height: 36px !important;
-                        border-radius: .25rem !important;
-                        margin: 18px 0px 0px 32px;
+                    .success {
+                        background: #5CB85C;
                     }
 
-                    // TABLE START ============
-                    .table-wrap {
-                        height: 650px;
-                        display: block;
-                        overflow-y: auto;
-                        border-top: 1px solid rgb(222, 226, 230);
+                    .failed {
+                        background: #df2626;
                     }
-
-                    table {
-                        position: relative;
-                        border-collapse: collapse;
-
-                        thead th {
-                            position: sticky;
-                            top: -1px;
-                            border: none;
-                            background: #84b4cc;
-                        }
-
-                        th,
-                        td {
-                            text-align: center;
-                            border: 1px solid #f1d9d9 !important;
-                            font-size: 14px;
-                        }
-
-                        tbody th:nth-child(1),
-                        tbody tr:nth-child(1) td {
-                            border-top: none;
-                        }
-
-                        i.fa-edit {
-                            color: #0d47a1;
-                        }
-
-                        i.fa-trash-alt {
-                            color: #ef5350;
-                        }
-
-                        .success,
-                        .failed {
-                            text-transform: capitalize;
-                            color: #ffffff;
-                            border: none;
-                            border-radius: 5px;
-                            padding: 5px;
-                            margin-top: 6.25px;
-                        }
-
-                        .success {
-                            background: #5CB85C;
-                        }
-
-                        .failed {
-                            background: #df2626;
-                        }
-                    }
-
-                    // TABLE END xxxxxxxx
                 }
 
-                // SEARCH GROUP AND TABLE END xxxxxxxxxxx
+                // TABLE END xxxxxxxx
             }
 
-            // 1ST ITEM ADD GROUP SECTION END xxxxxxxxxxxxxxx
+            // SEARCH GROUP AND TABLE END xxxxxxxxxxx
         }
 
-        // STYLE MANAGE GROUP SECTION END XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // Tab content END xxxxxxxxxxxxxxx
 
 
 

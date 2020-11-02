@@ -164,8 +164,126 @@
         <div class="container-fluid content-page">
 
             <!-- BULK SMS CONTENT START content-box-shadow -->
-            <div class="content-box p-0 p-sm-4">
-                <div class="row">
+            <div class="content-box p-0 pb-sm-4">
+                <!-- TAB BAR -->
+                <ul id="myTab" class="tabs tabs-fixed-width tab-demo z-depth-1">
+                    <li class="tab"><a href="#inputMessage">Type Message</a></li>
+                    <li class="tab"><a href="#excelMessage">Message from EXCEL</a></li>
+                </ul>
+                <!-- 1ST TAB CONTENT INPUT MESSAGE START -->
+                <div id="inputMessage" class="row">
+                    <form id="bulkSms">
+                        <!-- UPLOAD EXCEL FILE -->
+                        <div class="form-row justify-content-center my-4 mx-5 mx-xl-0">
+                            <div class="col-12 col-xl-9">
+                                <div class="file-field input-field">
+                                    <div class="btn waves-effect light-blue col-12 col-sm-5 col-lg-4 mb-3 mb-sm-0">
+                                        <span class="select-file">Select Excel File</span>
+                                        <input type="file">
+                                    </div>
+                                    <div class="file-path-wrapper col-12 col-sm-7 col-lg-8 pl-0 pl-sm-5">
+                                        <input class="file-path validate text-muted text-center" type="text" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SELECT SHEET NAME / MOBILE COLUMN / MESSAGE COLUMN -->
+                        <div class="form-row justify-content-xl-center mb-5 mx-5 mx-xl-0">
+                            <div class="col-12 col-md-6 col-xl-5 mb-5 mb-md-0 pr-md-4">
+                                <label>Sheet Name</label>
+                                <select class="form-control" id="FilterProduct">
+                                    <option>Choose Sheet Name</option>
+                                    <option>10 g</option>
+                                    <option>50 g</option>
+                                    <option>100 g</option>
+                                    <option>500 g</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-5 mb-5 mb-xl-0 pr-md-4">
+                                <label>Mobile Number Column</label>
+                                <select class="form-control" id="FilterProduct">
+                                    <option>Choose Number Column</option>
+                                    <option>10 g</option>
+                                    <option>50 g</option>
+                                    <option>100 g</option>
+                                    <option>500 g</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- TYPE MESSAGE -->
+                        <div class="form-row justify-content-center mx-5 mx-xl-0">
+                            <div class="col-12 col-md-12 col-lg-7 col-xl-5">
+                                <label for="smsArea">Enter Message</label>
+                                <textarea class="form-control" id="smsArea" rows="5"
+                                    placeholder="Type Your Message Here"></textarea>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-5 col-xl-5 my-auto">
+                                <p class="m-0 p-0 mt-3 ml-3">Encoding: <span>GSM_7BIT_EX</span></p>
+                                <p class="m-0 p-0 ml-3">You have <span id="wordCount">0 words</span> and <span
+                                        id="charCount">0
+                                        characters</span></p>
+                                <p class="m-0 p-0 ml-3"><span>Number of SMS: </span><span>0</span></p>
+                                <p class="ml-3"><span>Remaining Character:</span>&nbsp;<span id="remainingC">160</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- SUBMIT/PREVIEW/RESET BUTTONS -->
+                        <div class="form-row justify-content-center mt-3">
+                            <a href="#modalPreview2" class="btn waves-effect orange lighten-1 mr-3"
+                                data-toggle="modal">Preview</a>
+                            <a href="#" class="btn waves-effect teal lighten-1 mr-3">Send</a>
+                            <a href="bulksms.html" class="btn waves-effect pink lighten-1">Reset</a>
+                        </div>
+
+                        <!-- Modal Structure [PREVIEW] -->
+                        <div class="modal fade" id="modalPreview2">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">SMS Preview</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <!-- PREVIEW TABLE -->
+                                        <table class="table table-bordered table-condensed table-hover table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Number</th>
+                                                    <th scope="col">SMS</th>
+                                                    <th scope="col">Length</th>
+                                                    <th scope="col">Char</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>01718624208</td>
+                                                    <td>This is a test Message sent from md z</td>
+                                                    <td>1</td>
+                                                    <td>123</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn waves-effect grey darken-2 text-light"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- 1ST TAB CONTENT INPUT MESSAGE END -->
+
+                <!-- 2ND TAB CONTENT EXCEL MESSAGE START -->
+                <div id="excelMessage" class="row">
                     <form id="bulkSms">
                         <!-- UPLOAD EXCEL FILE -->
                         <div class="form-row justify-content-center my-4 mx-5 mx-xl-0">
@@ -216,74 +334,14 @@
                             </div>
                         </div>
 
-                        <!-- TYPE MESSAGE -->
-                        <div class="form-row justify-content-center mx-5 mx-xl-0">
-                            <div class="col-12 col-md-12 col-lg-7 col-xl-5">
-                                <label for="smsArea">Enter Message</label>
-                                <textarea class="form-control" id="smsArea" rows="5"
-                                    placeholder="Type Your Message Here"></textarea>
-                            </div>
-                            <div class="col-12 col-md-12 col-lg-5 col-xl-4 my-auto">
-                                <p class="m-0 p-0 mt-3 ml-3">Encoding: <span>GSM_7BIT_EX</span></p>
-                                <p class="m-0 p-0 ml-3">You have <span id="wordCount">0 words</span> and <span
-                                        id="charCount">0
-                                        characters</span></p>
-                                <p class="m-0 p-0 ml-3"><span>Number of SMS: </span><span>0</span></p>
-                                <p class="ml-3"><span>Remaining Character:</span>&nbsp;<span id="remainingC">160</span>
-                                </p>
-                            </div>
-                        </div>
-
                         <!-- SUBMIT/PREVIEW/RESET BUTTONS -->
                         <div class="form-row justify-content-center mt-5">
-                            <a href="#modalPreview2" class="btn waves-effect orange lighten-1 mr-3"
-                                data-toggle="modal">Preview</a>
                             <a href="#" class="btn waves-effect teal lighten-1 mr-3">Send</a>
                             <a href="bulksms.html" class="btn waves-effect pink lighten-1">Reset</a>
                         </div>
-
-                        <!-- Modal Structure [PREVIEW] -->
-                        <div class="modal fade" id="modalPreview2">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">SMS Preview</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-
-                                    <div class="modal-body">
-                                        <!-- PREVIEW TABLE -->
-                                        <table class="table table-bordered table-condensed table-hover table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">Number</th>
-                                                    <th scope="col">SMS</th>
-                                                    <th scope="col">Length</th>
-                                                    <th scope="col">Char</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>01718624208</td>
-                                                    <td>This is a test Message sent from md z</td>
-                                                    <td>1</td>
-                                                    <td>123</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn waves-effect grey darken-2 text-light"
-                                            data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </form>
                 </div>
+                <!-- 2ND TAB CONTENT EXCEL MESSAGE END -->
             </div>
             <!-- SEND SMS CONTENT END -->
         </div>
